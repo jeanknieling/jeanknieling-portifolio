@@ -1,12 +1,14 @@
+import { useCallback, useState } from "react";
+import { useHeaderContext } from "../../providers/HeaderContext";
 import { DivContainerStyled, Input, Label } from "./styled";
 
-
 export const HamburgerMenu = () => {
-  return (
-    <DivContainerStyled>
-      <Input type="checkbox" id="checkbox-menu"/>
+  const { handleClickHamburguerMenu } = useHeaderContext();
 
-      <Label htmlFor="checkbox-menu">
+  return (
+    <DivContainerStyled >
+      <Input type="checkbox" id="checkbox-menu" />
+      <Label htmlFor="checkbox-menu" onClick={handleClickHamburguerMenu}>
         <span></span>
         <span></span>
         <span></span>

@@ -1,7 +1,8 @@
-import styled, { StyledComponent } from "styled-components";
+import styled from "styled-components";
 
 export const DivContainerStyled = styled.div`
-  
+  max-height: 30px;
+  max-width: 30px;
 `;
 
 export const Label = styled.label`
@@ -10,6 +11,7 @@ export const Label = styled.label`
   display: block;
   height: 30px;
   width: 30px;
+  margin-top: 12px;
 
   span {
     position: absolute;
@@ -17,8 +19,8 @@ export const Label = styled.label`
     height: 5px;
     width: 100%;
     border-radius: 30px;
-    background: #f16234;
-    transition: 0.25s ease-in-out;
+    background: #aaa;
+    transition: 0.6s;
   }
 
   span:nth-child(1) {
@@ -34,9 +36,7 @@ export const Label = styled.label`
   }
 `;
 
-export const Input: StyledComponent<"input", any, {}, never> = styled.input`
-  width: 30px;
-  height: 40px;
+export const Input = styled.input`
   position: absolute;
   opacity: 0;
 
