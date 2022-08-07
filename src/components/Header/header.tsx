@@ -21,10 +21,33 @@ export const Header = () => {
 
       <hr />
 
-      <NavigatorMenu
-        menuNames={["Home", "Sobre", "Tecnologias", "Portifólio", "Contato"]}
-        isOpen={isDrawerOpen}
-      />
+      <NavigatorMenu isOpen={isDrawerOpen} />
     </HeaderStyled>
   );
 };
+/*import { AiFillHome } from 'react-icons/ai'
+
+const quickMenu = [
+  { title: 'Users', Icon: AiFillHome },
+  { title: 'Products', Icon: AiFillHome },
+  { title: 'Transactions', Icon: AiFillHome },
+  { title: 'Transactions', Icon: AiFillHome },
+  { title: 'Transactions', Icon: AiFillHome }
+]
+
+function App() {
+  return (
+    <ol className="flex flex-col text-white">
+      {quickMenu.map(menuItem => {
+        const { title, path, Icon } = menuItem
+        return (
+          <li key={title}>
+            <a href={path}>
+              <Icon />
+            </a>
+          </li>
+        )
+      })}
+    </ol>
+  )
+}*/
