@@ -5,10 +5,11 @@ export const HeaderStyled = styled.header`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+  height: 100px;
   position: relative;
   background-color: #333;
   gap: 15px;
-  padding: 15px 15px 0 15px ;
+  padding: 15px 30px 0 15px;
 
   div {
     display: flex;
@@ -17,16 +18,42 @@ export const HeaderStyled = styled.header`
     width: 100%;
 
     section {
-      h2 {
-        font-size: 25px;
-      }
       display: flex;
       align-items: center;
       gap: 15px;
+
+      h2 {
+        font-size: 25px;
+        width: 170px;
+      }
     }
   }
 
-  hr {
-    width: 100%;
+  @media (min-width: 700px) {
+    padding: 10px 0 0 0;
+    height: 100px;
+
+    div {
+      section {
+        h2 {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25px;
+
+    div {
+      section {
+        h2 {
+          display: block;
+        }
+      }
+    }
   }
 `;

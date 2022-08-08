@@ -3,6 +3,12 @@ import styled from "styled-components";
 export const DivContainerStyled = styled.div`
   max-height: 30px;
   max-width: 30px;
+
+  @media (min-width: 700px) {
+    display: none;
+    position: relative;
+    top: -500px;
+  }
 `;
 
 export const Label = styled.label`
@@ -34,6 +40,10 @@ export const Label = styled.label`
   span:nth-child(3) {
     top: 16px;
   }
+
+  @media (min-width: 700px) {
+    display: none;
+  }
 `;
 
 export const Input = styled.input`
@@ -52,5 +62,9 @@ export const Input = styled.input`
   &:checked + ${Label} span:nth-child(3) {
     transform: rotate(45deg);
     top: 8px;
+  }
+
+  @media (min-width: 700px) {
+    display: none;
   }
 `;

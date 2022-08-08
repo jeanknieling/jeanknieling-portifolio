@@ -1,7 +1,17 @@
 import styled from "styled-components";
 
-export const AvatarStyled = styled.img`
+interface Props {
+  size: string;
+  color: string;
+}
+
+export const AvatarStyled = styled.img<Props>`
   border-radius: 100%;
-  width: 70px;
-  height: 70px;
+  border: 3px solid ${({ color }) => color && color};
+  width: ${({ size }) => (size && size)};
+  height: ${({ size }) => (size && size)};
+
+  @media (min-width: 700px) {
+    display: none;
+  }
 `;

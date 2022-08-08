@@ -5,9 +5,8 @@ export const LinkStyled = styled.a`
   color: "#AAA";
   font-size: 20px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-width: 15px;
+  min-width: 100%;
   min-height: 50px;
   gap: 10px;
 `;
