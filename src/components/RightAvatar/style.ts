@@ -15,18 +15,22 @@ export const RightAvatarStyled = styled.img<Props>`
   display: none;
   top: 50px;
   opacity: 0;
+  object-fit: cover;
+  object-position: top;
+  padding: 5px;
+
   @media (min-width: 700px) {
     @keyframes rightAvatarAnimation {
       form {
         right: -50px;
       }
       to {
-        right: 50px;
+        right: 25px;
         opacity: 1;
       }
     }
 
     display: block;
-    animation: rightAvatarAnimation 2s forwards;
+    animation: rightAvatarAnimation 3s forwards;
   }
 `;

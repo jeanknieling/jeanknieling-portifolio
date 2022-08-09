@@ -1,51 +1,55 @@
 import styled from "styled-components";
 
-export const MyDescriptionStyled = styled.main`
+export const MyDescriptionStyled = styled.div`
+  background: rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
   position: absolute;
   z-index: -2;
-  max-width: 1300px;
+  gap: 50px;
+  padding: 30px 25px;
+  width: 100%;
 
   div {
     display: flex;
     flex-direction: column;
-    padding: 30px 25px;
     gap: 20px;
 
-    p:nth-child(1) {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 15px;
+    p:nth-child(1) > span:nth-child(1) {
+      color: #f05600;
     }
 
-    p {
+    p:nth-child(4) {
       display: flex;
-      align-items: flex-end;
-      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      white-space: nowrap;
+
     }
 
-    h1 {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+    p:nth-child(4) span {
+      padding: 0 5px;
+      height: 38px;
     }
-  }
 
-  h2 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
+    h1 > span:nth-child(1) {
+      color: #f05600;
+      line-height: 1.3;
+    }
 
-  p,
-  h1,
-  h2 {
-    font-size: 20px;
+    h2 > span:nth-child(2) {
+      color: #f05600;
+    }
   }
 
   span {
     font-size: 25px;
-    color: #f05600;
+  }
+
+  p {
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
   }
 `;
 
@@ -54,17 +58,13 @@ export const GifStyled = styled.img`
   z-index: -3;
   height: 100%;
   width: 100%;
+  top: 0px;
   left: 0;
-  opacity: 0.09;
+  opacity: 0.05;
 `;
 
 export const PStyled = styled.p`
   line-height: 25px;
   padding: 15px 15px;
   border: 2px solid #f05600;
-  margin: 30px 25px;
-`;
-
-export const EmogiSpan = styled.span`
-  font-size: 30px;
 `;

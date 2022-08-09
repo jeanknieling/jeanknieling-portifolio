@@ -7,7 +7,9 @@ const App = () => {
       <GlobalStyle />
       <Container>
         <Header />
-        <MyDescription/>
+        <main>
+          <MyDescription />
+        </main>
       </Container>
     </div>
   );

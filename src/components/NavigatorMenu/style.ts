@@ -38,7 +38,8 @@ export const NavigatorMenuStyled = styled.nav<Props>`
 
     ul {
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-evenly;
+      width: 100%;
     }
   }
 

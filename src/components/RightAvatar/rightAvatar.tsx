@@ -7,6 +7,6 @@ interface IRightAvatarProps {
   color: string;
 }
 
-export const RightAvatar: React.FC<IRightAvatarProps> = ({ url, alt, ...rest }) => {
+export const RightAvatar: React.FC<IRightAvatarProps> = ({ url="./../../assets/photo.png", alt, ...rest }) => {
   return <RightAvatarStyled src={url} alt={alt} {...rest}/>;
 };

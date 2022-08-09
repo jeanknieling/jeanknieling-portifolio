@@ -9,7 +9,7 @@ export const HeaderStyled = styled.header`
   position: relative;
   background-color: #333;
   gap: 15px;
-  padding: 15px 30px 0 15px;
+  padding: 15px 15px 0 15px;
 
   div {
     display: flex;
@@ -23,8 +23,8 @@ export const HeaderStyled = styled.header`
       gap: 15px;
 
       h2 {
-        font-size: 25px;
-        width: 170px;
+        font-size: 20px;
+        width: 180px;
       }
     }
   }

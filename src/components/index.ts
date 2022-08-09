@@ -6,3 +6,4 @@ export * from "./NavigatorMenu/navigatorMenu";
 export * from "./Container/container";
 export * from "./MyDescription/myDescription";
 export * from "./RightAvatar/rightAvatar";
+export * from "./SocialNetworks/socialNetworks"

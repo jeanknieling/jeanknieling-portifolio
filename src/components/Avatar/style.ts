@@ -10,6 +10,9 @@ export const AvatarStyled = styled.img<Props>`
   border: 3px solid ${({ color }) => color && color};
   width: ${({ size }) => (size && size)};
   height: ${({ size }) => (size && size)};
+  object-fit: cover;
+  object-position: top;
+  padding: 2px;
 
   @media (min-width: 700px) {
     display: none;
