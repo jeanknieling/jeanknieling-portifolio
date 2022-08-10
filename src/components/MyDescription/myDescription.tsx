@@ -1,4 +1,4 @@
-import { RightAvatar } from "../../components";
+import { CVButton, RightAvatar, SocialNetworks } from "../../components";
 import Gif from "./../../assets/loop.gif";
 import MyPhoto from "./../../assets/original.jpg";
 
@@ -40,9 +40,19 @@ export const MyDescription: React.FC = () => {
         Acredito no poder de transformação e evolução através da tecnologia, mas
         não apenas isso, também quero ser um exemplo de superação, esforço e
         dedicação aos meus filhos e esposa, isso me motiva a continuar minha
-        jornada de estudos na área de programação, que de fato iniciou na Kenzie Academy
-        Brasil a um ano e se depender de mim não terá data para terminar.
+        jornada de estudos na área de programação, que de fato iniciou na Kenzie
+        Academy Brasil a um ano e se depender de mim não terá data para
+        terminar.
       </PStyled>
+      <div>
+        <CVButton
+          link="https://drive.google.com/file/d/13qdW7G_tj-336MHiCKqM1DhSsBZem1ha/view?usp=sharing"
+          color="white"
+          padding="20px"
+          text="Meu Currículo"
+        />
+        <SocialNetworks />
+      </div>
     </MyDescriptionStyled>
   );
 };

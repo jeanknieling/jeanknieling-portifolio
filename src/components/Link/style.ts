@@ -9,4 +9,9 @@ export const LinkStyled = styled.a`
   min-width: 100%;
   min-height: 50px;
   gap: 10px;
+  white-space: nowrap;
+
+  span {
+    height: 30px;
+  }
 `;

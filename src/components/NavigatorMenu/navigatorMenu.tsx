@@ -13,8 +13,7 @@ interface IMenu {
 }
 
 const menu: Array<IMenu> = [
-  { title: "Home", Icon: FaHome },
-  { title: "Sobre", Icon: FaRegUser },
+  { title: "Sobre mim", Icon: FaRegUser },
   { title: "Tecnologias", Icon: FaLaptopCode },
   { title: "Portifólio", Icon: FaClipboardList },
   { title: "Contato", Icon: FaMailBulk },
@@ -28,7 +27,7 @@ export const NavigatorMenu: React.FC<INavigatorMenuProps> = ({ ...rest }) => {
           const { title, Icon } = item;
           return (
             <li key={index}>
-              <Link ><Icon size={25}/>{title}</Link>
+              <Link ><span><Icon size={25}/></span>{title}</Link>
             </li>
           );
         })}

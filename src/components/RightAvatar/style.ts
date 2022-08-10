@@ -32,5 +32,13 @@ export const RightAvatarStyled = styled.img<Props>`
 
     display: block;
     animation: rightAvatarAnimation 3s forwards;
+    transition: 1s;
+  }
+
+  @media (min-width: 900px) {
+    top: 15px;
+    width: 340px;
+    height: 340px;
+    transition: 1s;
   }
 `;

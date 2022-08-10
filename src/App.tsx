@@ -1,4 +1,4 @@
-import { Container, Header, MyDescription } from "./components";
+import { Container, Header, MyDescription, Technologies } from "./components";
 import { GlobalStyle } from "./style/global";
 
 const App = () => {
@@ -9,6 +9,7 @@ const App = () => {
         <Header />
         <main>
           <MyDescription />
+          <Technologies/>
         </main>
       </Container>
     </div>

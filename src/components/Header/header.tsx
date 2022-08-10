@@ -1,5 +1,5 @@
 import { useHeaderContext } from "../../providers/HeaderContext";
-import MyPhoto from "./../../assets/photo.jpg";
+import MyPhoto from "./../../assets/favicon_io/android-chrome-192x192.png";
 import { Avatar, HamburgerMenu, NavigatorMenu } from "./../../components";
 import { HeaderStyled } from "./style";
 

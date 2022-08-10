@@ -24,7 +24,6 @@ export const MyDescriptionStyled = styled.div`
       align-items: center;
       flex-wrap: wrap;
       white-space: nowrap;
-
     }
 
     p:nth-child(4) span {
@@ -39,6 +38,16 @@ export const MyDescriptionStyled = styled.div`
 
     h2 > span:nth-child(2) {
       color: #f05600;
+    }
+  }
+
+  div:last-child {
+    gap: 50px;
+
+    @media (min-width: 500px) {
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
     }
   }
 
@@ -60,7 +69,7 @@ export const GifStyled = styled.img`
   width: 100%;
   top: 0px;
   left: 0;
-  opacity: 0.05;
+  opacity: 0.04;
 `;
 
 export const PStyled = styled.p`
