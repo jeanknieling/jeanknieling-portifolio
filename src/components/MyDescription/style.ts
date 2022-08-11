@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const MyDescriptionStyled = styled.div`
-  background: rgba(0, 0, 0, 1);
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.95);
   display: flex;
   flex-direction: column;
-  position: absolute;
-  z-index: -2;
-  gap: 50px;
+  justify-content: space-between;
   padding: 30px 25px;
-  width: 100%;
+  position: relative;
+  gap: 50px;
 
   div {
     display: flex;
@@ -64,16 +64,17 @@ export const MyDescriptionStyled = styled.div`
 
 export const GifStyled = styled.img`
   position: absolute;
-  z-index: -3;
+  z-index: -1;
   height: 100%;
   width: 100%;
   top: 0px;
   left: 0;
-  opacity: 0.04;
+  opacity: 1;
 `;
 
 export const PStyled = styled.p`
   line-height: 25px;
   padding: 15px 15px;
   border: 2px solid #f05600;
+  border-radius: 8px;
 `;

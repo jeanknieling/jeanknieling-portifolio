@@ -1,16 +1,16 @@
-import { Container, Header, MyDescription, Technologies } from "./components";
+import { Container, Header, Main, MyDescription, Technologies } from "./components";
 import { GlobalStyle } from "./style/global";
 
 const App = () => {
   return (
     <div className="App">
-      <GlobalStyle />
+      <GlobalStyle/>
       <Container>
         <Header />
-        <main>
+        <Main>
           <MyDescription />
           <Technologies/>
-        </main>
+        </Main>
       </Container>
     </div>
   );

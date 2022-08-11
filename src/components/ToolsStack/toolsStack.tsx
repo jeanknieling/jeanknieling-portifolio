@@ -19,14 +19,14 @@ import {
   SiTypescript,
   SiVite,
 } from "react-icons/si";
-import { TechStackStyled } from "../TechStack/style";
+import { ToolsStackStyled } from "./style";
 
-interface ITechStack {
+interface IToolsStack {
   name: string;
   Icon: IconType | string;
 }
 
-const menu: Array<ITechStack> = [
+const menu: Array<IToolsStack> = [
   { name: "Git", Icon: FaGitAlt },
   { name: "HTML5", Icon: FaHtml5 },
   { name: "CSS3", Icon: FaCss3Alt },
@@ -48,9 +48,9 @@ const menu: Array<ITechStack> = [
   { name: "Django", Icon: SiDjango },
 ];
 
-export const TechStack = () => {
+export const ToolsStack = () => {
   return (
-    <TechStackStyled>
+    <ToolsStackStyled >
       <h3>Tecnologias que tenho conhecimento</h3>
       <ul>
         {menu.map((item, index) => {
@@ -64,6 +64,6 @@ export const TechStack = () => {
           );
         })}
       </ul>
-    </TechStackStyled>
+    </ToolsStackStyled>
   );
 };

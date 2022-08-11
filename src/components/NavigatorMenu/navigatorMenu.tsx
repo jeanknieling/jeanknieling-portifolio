@@ -1,5 +1,10 @@
 import { IconType } from "react-icons";
-import { FaClipboardList, FaHome, FaLaptopCode, FaMailBulk, FaRegUser } from "react-icons/fa";
+import {
+  FaClipboardList,
+  FaLaptopCode,
+  FaMailBulk,
+  FaRegUser,
+} from "react-icons/fa";
 import { Link } from "./../../components";
 import { NavigatorMenuStyled } from "./style";
 
@@ -27,7 +32,12 @@ export const NavigatorMenu: React.FC<INavigatorMenuProps> = ({ ...rest }) => {
           const { title, Icon } = item;
           return (
             <li key={index}>
-              <Link ><span><Icon size={25}/></span>{title}</Link>
+              <Link key={index}>
+                <span>
+                  <Icon size={25} />
+                </span>
+                {title}
+              </Link>
             </li>
           );
         })}

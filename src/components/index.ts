@@ -10,3 +10,5 @@ export * from "./RightAvatar/rightAvatar";
 export * from "./SocialNetworks/socialNetworks";
 export * from "./TechStack/teckStack";
 export * from "./Technologies/technologies";
+export * from "./Main/main";
+export * from "./ToolsStack/toolsStack";

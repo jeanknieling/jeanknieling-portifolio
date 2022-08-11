@@ -6,20 +6,18 @@ interface Props {
 
 export const NavigatorMenuStyled = styled.nav<Props>`
   position: absolute;
-  top: ${(props) => (props.isOpen ? "100px" : "-500px")};
-  left: 0px;
+  right: ${(props) => (props.isOpen ? "0" : "-700px")};
+  top: 99px;
   transition: 1s;
   padding: 15px;
   background-color: #333;
   width: 100%;
   z-index: -1;
-
   ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
     
-
     li {
       display: flex;
       background-color: #aaa;
@@ -30,15 +28,14 @@ export const NavigatorMenuStyled = styled.nav<Props>`
 
   @media (min-width: 700px) {
     position: static;
-    z-index: 1;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
-
+    
     ul {
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-between;
       width: 100%;
     }
   }

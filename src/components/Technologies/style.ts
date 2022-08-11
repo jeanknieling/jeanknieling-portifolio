@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const TechnologiesStyled  = styled.div`
-  position: absolute;
-  z-index: -2;
+export const TechnologiesStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
 `;

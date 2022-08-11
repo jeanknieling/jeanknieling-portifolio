@@ -3,35 +3,37 @@ import styled from "styled-components";
 export const HeaderStyled = styled.header`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: stretch;
   width: 100%;
-  height: 100px;
-  position: relative;
+  min-height: 100px;
   background-color: #333;
-  gap: 15px;
-  padding: 15px 15px 0 15px;
+  position: fixed;
+  padding: 0 25px;
+  z-index: 1;
 
   div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    z-index: 2;
 
     section {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 10px;
 
       h2 {
         font-size: 20px;
-        width: 180px;
+        width: 160px;
       }
     }
   }
 
   @media (min-width: 700px) {
-    padding: 10px 0 0 0;
     height: 100px;
+    
 
     div {
       section {
@@ -44,7 +46,7 @@ export const HeaderStyled = styled.header`
 
   @media (min-width: 900px) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 0 25px;
 

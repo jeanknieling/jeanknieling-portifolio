@@ -11,14 +11,25 @@ export const SocialNetworksStyled = styled.section`
         align-items: flex-end;
         justify-content: space-between;
 
-        SVG:hover {
-          color: red;
+        SVG {
+          font-size: 32px;
         }
       }
     }
 
     @media (min-width: 500px) {
       gap: 20px;
+    }
+
+    @media (min-width: 600px) {
+      li {
+        a {
+          SVG {
+            font-size: 45px;
+            transition: 1s;
+          }
+        }
+      }
     }
   }
 `;

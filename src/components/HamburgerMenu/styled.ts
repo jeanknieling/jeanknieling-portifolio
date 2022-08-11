@@ -17,7 +17,7 @@ export const Label = styled.label`
   display: block;
   height: 30px;
   width: 30px;
-  margin-top: 12px;
+  margin-top: 5px;
 
   span {
     position: absolute;

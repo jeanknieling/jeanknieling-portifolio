@@ -30,7 +30,7 @@ export const SocialNetworks = () => {
           return (
             <li key={index}>
               <a href={link} target="_blank">
-                <Icon size={35} color="blue" />
+                <Icon />
               </a>
             </li>
           );

@@ -36,9 +36,9 @@ export const RightAvatarStyled = styled.img<Props>`
   }
 
   @media (min-width: 900px) {
-    top: 15px;
-    width: 340px;
-    height: 340px;
+    top: 22px;
+    width: 320px;
+    height: 320px;
     transition: 1s;
   }
 `;

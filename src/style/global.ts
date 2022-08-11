@@ -36,6 +36,7 @@ body {
 	line-height: 1;
   position: absolute;
   width: 100vw;
+  height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }

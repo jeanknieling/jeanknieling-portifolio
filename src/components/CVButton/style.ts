@@ -11,6 +11,6 @@ export const CVButtonStyled = styled.button<Props>`
   padding: ${({ padding }) => padding && padding};
 
   @media (min-width: 500px) {
-    width: 200px;
+    width: 180px;
   }
 `;
