@@ -11,6 +11,7 @@ export const HeaderStyled = styled.header`
   position: fixed;
   padding: 0 25px;
   z-index: 1;
+  max-width: 1000px;
 
   div {
     display: flex;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const MyDescriptionStyled = styled.div`
-  box-sizing: border-box;
   background: rgba(0, 0, 0, 0.95);
   display: flex;
   flex-direction: column;
@@ -9,6 +8,7 @@ export const MyDescriptionStyled = styled.div`
   padding: 30px 25px;
   position: relative;
   gap: 50px;
+  width: 100%;
 
   div {
     display: flex;

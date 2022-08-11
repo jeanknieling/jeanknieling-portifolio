@@ -35,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;

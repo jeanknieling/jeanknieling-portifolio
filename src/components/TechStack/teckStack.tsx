@@ -51,7 +51,7 @@ const menu: Array<ITechStack> = [
 export const TechStack = () => {
   return (
     <TechStackStyled>
-      <h3>Tecnologias que tenho conhecimento</h3>
+      <h3>TECNOLOGIAS</h3>
       <ul>
         {menu.map((item, index) => {
           const { Icon, name } = item;
