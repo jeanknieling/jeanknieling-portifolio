@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TechStackStyled = styled.div`
+export const AgileMethodologiesStackStyled  = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,18 +9,19 @@ export const TechStackStyled = styled.div`
   background-color: white;
   max-width: 700px;
   position: relative;
-  left: -1100px;
+  right: -1100px;
   opacity: 0;
-  @keyframes leftAnimation {
+  @keyframes rightAnimation {
     form {
-      left: -1100px;
+      right: -1100px;
     }
     to {
-      left: 0px;
+      right: 0px;
       opacity: 1;
     }
   }
-  animation: leftAnimation 2s forwards;
+  
+  animation: rightAnimation 2s forwards;
   transition: 1s;
 
   h3 {

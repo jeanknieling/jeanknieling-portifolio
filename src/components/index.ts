@@ -12,3 +12,5 @@ export * from "./TechStack/teckStack";
 export * from "./Technologies/technologies";
 export * from "./Main/main";
 export * from "./ToolsStack/toolsStack";
+export * from "./StudingStack/studingStack";
+export * from "./AgileMethodologiesStack/agileMethodologiesStack";

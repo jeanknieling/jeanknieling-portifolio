@@ -3,7 +3,7 @@ import {
   FaYarn,FaDocker, FaTrello,FaFigma,FaGithub,FaJira
 } from "react-icons/fa";
 import {
-  SiHeroku,SiVercel,SiInsomnia,SiNpm,SiNotion,SiVisualstudiocode
+  SiHeroku,SiVercel,SiInsomnia,SiNpm,SiNotion,SiVisualstudiocode,SiSwagger
 } from "react-icons/si";
 import { ToolsStackStyled } from "./style";
 
@@ -18,6 +18,7 @@ const menu: Array<IToolsStack> = [
   { name: "Vercel", Icon: SiVercel },
   { name: "Docker", Icon: FaDocker },
   { name: "Insomnia", Icon: SiInsomnia },
+  { name: "Swagger", Icon: SiSwagger },
   { name: "", Icon: "beekeeper" },
   { name: "npm", Icon: SiNpm },
   { name: "Trello", Icon: FaTrello },
