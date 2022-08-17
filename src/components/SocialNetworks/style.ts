@@ -13,6 +13,7 @@ export const SocialNetworksStyled = styled.section`
 
         SVG {
           font-size: 32px;
+          color: #0055FF;
         }
       }
     }

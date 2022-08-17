@@ -1,15 +1,24 @@
-import { Container, Header, Main, MyDescription, Technologies } from "./components";
+import {
+  Container,
+  Header,
+  Main,
+  MyDescription,
+  Technologies,
+} from "./components";
+import { useScrollContext } from "./providers";
 import { GlobalStyle } from "./style/global";
 
 const App = () => {
+  const { handleOnWheel } = useScrollContext();
+
   return (
     <div className="App">
-      <GlobalStyle/>
+      <GlobalStyle />
       <Container>
         <Header />
-        <Main>
+        <Main onWheel={handleOnWheel}>
           <MyDescription />
-          <Technologies/>
+          <Technologies />
         </Main>
       </Container>
     </div>

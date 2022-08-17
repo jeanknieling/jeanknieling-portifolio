@@ -1,10 +1,22 @@
 import { IconType } from "react-icons";
 import {
-  FaYarn,FaDocker, FaTrello,FaFigma,FaGithub,FaJira
+  FaDocker,
+  FaFigma,
+  FaGithub,
+  FaJira,
+  FaTrello,
+  FaYarn,
 } from "react-icons/fa";
 import {
-  SiHeroku,SiVercel,SiInsomnia,SiNpm,SiNotion,SiVisualstudiocode,SiSwagger
+  SiHeroku,
+  SiInsomnia,
+  SiNotion,
+  SiNpm,
+  SiSwagger,
+  SiVercel,
+  SiVisualstudiocode,
 } from "react-icons/si";
+import { useScrollContext } from "../../providers";
 import { ToolsStackStyled } from "./style";
 
 interface IToolsStack {
@@ -24,14 +36,17 @@ const menu: Array<IToolsStack> = [
   { name: "Trello", Icon: FaTrello },
   { name: "Notion", Icon: SiNotion },
   { name: "Figma", Icon: FaFigma },
-  { name: "Visual Studio Code", Icon: SiVisualstudiocode},
+  { name: "Visual Studio Code", Icon: SiVisualstudiocode },
   { name: "Github", Icon: FaGithub },
-  { name: "Jira", Icon: FaJira }
+  { name: "Jira", Icon: FaJira },
 ];
 
 export const ToolsStack = () => {
+
+  const { scrollY} = useScrollContext();
+
   return (
-    <ToolsStackStyled >
+    <ToolsStackStyled scrollY={scrollY}>
       <h3>FERRAMENTAS</h3>
       <ul>
         {menu.map((item, index) => {
@@ -39,7 +54,7 @@ export const ToolsStack = () => {
           return (
             <li key={index}>
               <a href="" target="_blank">
-                {typeof Icon !== "string" ? <Icon  /> : <p>{Icon}</p>}
+                {typeof Icon !== "string" ? <Icon /> : <p>{Icon}</p>}
               </a>
             </li>
           );

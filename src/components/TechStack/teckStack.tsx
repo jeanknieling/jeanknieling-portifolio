@@ -19,14 +19,15 @@ import {
   SiTypescript,
   SiVite,
 } from "react-icons/si";
+import { useScrollContext } from "../../providers";
 import { TechStackStyled } from "../TechStack/style";
 
-interface ITechStack {
+interface ITechStackIcons {
   name: string;
   Icon: IconType | string;
 }
 
-const menu: Array<ITechStack> = [
+const menu: Array<ITechStackIcons> = [
   { name: "Git", Icon: FaGitAlt },
   { name: "HTML5", Icon: FaHtml5 },
   { name: "CSS3", Icon: FaCss3Alt },
@@ -49,8 +50,10 @@ const menu: Array<ITechStack> = [
 ];
 
 export const TechStack = () => {
+  const { scrollY } = useScrollContext();
+
   return (
-    <TechStackStyled>
+    <TechStackStyled scrollY={scrollY}>
       <h3>TECNOLOGIAS</h3>
       <ul>
         {menu.map((item, index) => {
@@ -58,7 +61,7 @@ export const TechStack = () => {
           return (
             <li key={index}>
               <a href="" target="_blank">
-                {typeof Icon !== "string" ? <Icon  /> : <p>{Icon}</p>}
+                {typeof Icon !== "string" ? <Icon /> : <p>{Icon}</p>}
               </a>
             </li>
           );

@@ -5,6 +5,7 @@ import {
 import {
   SiMongodb, SiMaterialui
 } from "react-icons/si";
+import { useScrollContext } from "../../providers";
 import { StudingStackStyled } from "../StudingStack/style";
 
 interface IStudingStack {
@@ -19,8 +20,10 @@ const menu: Array<IStudingStack> = [
 ];
 
 export const StudingStack = () => {
+  const { scrollY } = useScrollContext();
+
   return (
-    <StudingStackStyled >
+    <StudingStackStyled scrollY={scrollY}>
       <h3>ESTUDANDO</h3>
       <ul>
         {menu.map((item, index) => {

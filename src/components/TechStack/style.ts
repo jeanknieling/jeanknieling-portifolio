@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const TechStackStyled = styled.div`
+interface Props {
+  scrollY: number;
+}
+
+export const TechStackStyled = styled.div<Props>`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,19 +12,22 @@ export const TechStackStyled = styled.div`
   gap: 25px;
   background-color: white;
   max-width: 700px;
+  min-width: 300px;
   position: relative;
-  left: -1100px;
+  left: -300px;
   opacity: 0;
   @keyframes leftAnimation {
     form {
-      left: -1100px;
+      left: -300px;
     }
     to {
       left: 0px;
       opacity: 1;
+      display: none;
     }
   }
-  animation: leftAnimation 2s forwards;
+  animation: ${({ scrollY }) =>
+    scrollY >= 460 && "leftAnimation 1.2s ease-in-out forwards"};
   transition: 1s;
 
   h3 {

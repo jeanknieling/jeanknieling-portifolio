@@ -6,6 +6,7 @@ import {
   BsKanban
 } from "react-icons/bs";
 import { AgileMethodologiesStackStyled } from "../AgileMethodologiesStack/style";
+import { useScrollContext } from "../../providers";
 
 interface  AgileMethodologiesStack {
   name: string;
@@ -18,8 +19,9 @@ const menu: Array< AgileMethodologiesStack> = [
 ];
 
 export const AgileMethodologiesStack  = () => {
+  const {scrollY} = useScrollContext();
   return (
-    <AgileMethodologiesStackStyled >
+    <AgileMethodologiesStackStyled scrollY={scrollY}>
       <h3>METODOLOGIAS ÁGEIS</h3>
       <ul>
         {menu.map((item, index) => {

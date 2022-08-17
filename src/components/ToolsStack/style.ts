@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const ToolsStackStyled = styled.div`
+interface Props {
+  scrollY: number;
+}
+
+export const ToolsStackStyled = styled.div<Props>`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,19 +12,21 @@ export const ToolsStackStyled = styled.div`
   gap: 25px;
   background-color: white;
   max-width: 700px;
+  min-width: 300px;
   position: relative;
-  right: -1100px;
+  left: -300px;
   opacity: 0;
-  @keyframes rightAnimation {
+  @keyframes leftAnimation {
     form {
-      right: -1100px;
+      left: -100px;
     }
     to {
-      right: 0px;
+      left: 0px;
       opacity: 1;
     }
   }
-  animation: rightAnimation 2s forwards;
+   animation: ${({ scrollY }) =>
+    scrollY >= 1000 && "leftAnimation 1.2s ease-in-out forwards"};
   transition: 1s;
 
   h3 {
