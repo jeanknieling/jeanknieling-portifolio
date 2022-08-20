@@ -9,8 +9,8 @@ interface ICVButtonProps {
 
 export const CVButton: React.FC<ICVButtonProps> = ({ text, link, ...rest }) => {
   return (
-    <CVButtonStyled {...rest}>
-      <a href={link} target="_blank">{text}</a>
+    <CVButtonStyled href={link} target="_blank" {...rest}>
+      <button>{text}</button>
     </CVButtonStyled>
   );
 };

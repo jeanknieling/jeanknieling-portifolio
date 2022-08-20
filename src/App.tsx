@@ -14,13 +14,11 @@ const App = () => {
   return (
     <div className="App">
       <GlobalStyle />
-      <Container>
         <Header />
         <Main onWheel={handleOnWheel}>
           <MyDescription />
           <Technologies />
         </Main>
-      </Container>
     </div>
   );
 };

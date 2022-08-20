@@ -5,7 +5,6 @@ import {
   FaMailBulk,
   FaRegUser,
 } from "react-icons/fa";
-import { Link } from "./../../components";
 import { NavigatorMenuStyled } from "./style";
 
 interface INavigatorMenuProps {
@@ -32,12 +31,12 @@ export const NavigatorMenu: React.FC<INavigatorMenuProps> = ({ ...rest }) => {
           const { title, Icon } = item;
           return (
             <li key={index}>
-              <Link key={index}>
+              <a key={index}>
                 <span>
                   <Icon size={25} />
                 </span>
                 {title}
-              </Link>
+              </a>
             </li>
           );
         })}

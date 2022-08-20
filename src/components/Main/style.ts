@@ -4,4 +4,5 @@ export const MainStyled = styled.main`
   position: absolute;
   top: 100px;
   width: 100%;
+  z-index: -3;
 `;

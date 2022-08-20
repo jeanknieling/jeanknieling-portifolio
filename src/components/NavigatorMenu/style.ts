@@ -10,19 +10,57 @@ export const NavigatorMenuStyled = styled.nav<Props>`
   top: 99px;
   transition: 1s;
   padding: 15px;
-  background-color: #333;
   width: 100%;
   z-index: -1;
+  background: #0575e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #021b79,
+    #0575e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #021b79, #0575e6);
+
   ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+
     li {
-      display: flex;
-      background-color: #aaa;
-      padding: 0 10px;
-      border-radius: 5px;
+      cursor: pointer;
+
+      a {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        font-weight: bold;
+        padding: 10px 20px;
+        white-space: nowrap;
+        height: 45px;
+        gap: 10px;
+        background-color: #f2f2f2;
+        color: #052266;
+        border-radius: 5px;
+        -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+        :hover {
+          background-color: #052266;
+          color: #f2f2f2;
+          transition: 0.3s;
+
+          SVG {
+            color: #f2f2f2;
+            transition: 0.3s;
+          }
+        }
+
+        SVG {
+          color: #052266;
+          transition: 0.3s;
+        }
+      }
     }
   }
 
@@ -31,8 +69,10 @@ export const NavigatorMenuStyled = styled.nav<Props>`
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    width: 100%;
-    
+    background: transparent;
+    background: -webkit-linear-gradient(transparent);
+    background: linear-gradient(transparent);
+
     ul {
       flex-direction: row;
       justify-content: space-between;
@@ -42,5 +82,7 @@ export const NavigatorMenuStyled = styled.nav<Props>`
 
   @media (min-width: 900px) {
     justify-content: flex-end;
+    width: 100%;
+    max-width: 850px;
   }
 `;

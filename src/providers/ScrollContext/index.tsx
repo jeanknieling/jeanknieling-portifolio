@@ -1,7 +1,6 @@
 import {
   createContext,
   ReactNode,
-  useCallback,
   useContext,
   useEffect,
   useState,
@@ -12,8 +11,10 @@ interface IScrollProviderProps {
 }
 
 interface IScrollContextData {
-  scrollY: number;
-  animation: string;
+  technologiesAnimation: string;
+  toolsAnimation: string;
+  studingAnimation: string;
+  agileMethodologiesAnimation: string;
   handleOnWheel: () => void;
 }
 
@@ -23,24 +24,47 @@ export const ScrollProvider: React.FC<IScrollProviderProps> = ({
   children,
 }) => {
   const [scrollY, setScrollY] = useState(0);
-  const [animation, setAnimation] = useState("");
+  const [technologiesAnimation, setTechnologiesAnimation] = useState("");
+  const [toolsAnimation, setToolsAnimation] = useState("");
+  const [studingAnimation, setStudingAnimation] = useState("");
+  const [agileMethodologiesAnimation, setAgileMethodologiesAnimation] = useState("");
 
   const handleOnWheel = () => {
     setScrollY(window.scrollY);
-    //console.log(window.scrollY);
   };
 
+  const divTechnologies = document.querySelector("#technologies");
+  const divTools= document.querySelector("#tools");
+  const divStuding= document.querySelector("#studing");
+  const divAgileMethodologies= document.querySelector("#agileMethodologies");
 
-  /* useEffect(() => {
-    if (scrollY >= 500) {
-      setAnimation("leftAnimation 2s forwards");
-    } else if (scrollY >= 700) {
-      setAnimation("rightAnimation 2s forwards");
+  useEffect(() => {
+    const windowHeight = window.innerHeight;
+    const elementVisible = 200;
+    let divTechnologiesTop: any = divTechnologies?.getBoundingClientRect().top;
+    let divToolsTop: any = divTools?.getBoundingClientRect().top;
+    let divStudingTop: any = divStuding?.getBoundingClientRect().top;
+    let divAgileMethodologiesTop: any = divAgileMethodologies?.getBoundingClientRect().top;
+
+    if (divTechnologiesTop < windowHeight - elementVisible) {
+      setTechnologiesAnimation("leftAnimation 1.2s ease-in-out forwards");
     }
-  }, [scrollY]); */
+
+    if (divToolsTop < windowHeight - elementVisible) {
+      setToolsAnimation("leftAnimation 1.2s ease-in-out forwards");
+    }
+
+    if (divStudingTop < windowHeight - elementVisible) {
+      setStudingAnimation("leftAnimation 1.2s ease-in-out forwards");
+    }
+
+    if (divAgileMethodologiesTop < windowHeight - elementVisible) {
+      setAgileMethodologiesAnimation("leftAnimation 1.2s ease-in-out forwards");
+    }
+  }, [scrollY]);
 
   return (
-    <ScrollContext.Provider value={{ scrollY, handleOnWheel, animation }}>
+    <ScrollContext.Provider value={{ handleOnWheel, technologiesAnimation, toolsAnimation, studingAnimation, agileMethodologiesAnimation }}>
       {children}
     </ScrollContext.Provider>
   );

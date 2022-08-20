@@ -9,25 +9,34 @@ export const SocialNetworksStyled = styled.section`
       a {
         display: flex;
         align-items: flex-end;
-        justify-content: space-between;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
 
         SVG {
-          font-size: 32px;
-          color: #0055FF;
+          font-size: 40px;
+          color: #0055ff;
+
+          :hover {
+            color: #f2f2f2;
+            font-size: 50px;
+            transition: 0.5s;
+          }
         }
       }
     }
 
-    @media (min-width: 500px) {
-      gap: 20px;
-    }
-
     @media (min-width: 600px) {
+      gap: 20px;
       li {
         a {
           SVG {
-            font-size: 45px;
-            transition: 1s;
+            font-size: 50px;
+            :hover {
+            color: #f2f2f2;
+            font-size: 60px;
+            transition: 0.5s;
+          }
           }
         }
       }

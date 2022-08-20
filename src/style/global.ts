@@ -34,11 +34,12 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
+  z-index: -1;
 }
 
 ol, ul {
@@ -85,7 +86,6 @@ table {
   --fontsize-h2: calc(var(--fontsize-h1) - 25%);
   --fontsize-h3: calc(var(--fontsize-h2) - 50%);
   --headline: 0.75rem;
-  --body: 1rem;
 
   --fontfamily-poppins: "Poppins", sans-serif;
  
