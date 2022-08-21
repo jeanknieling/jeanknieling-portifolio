@@ -38,15 +38,14 @@ export const NavigatorMenuStyled = styled.nav<Props>`
         height: 45px;
         gap: 10px;
         background-color: #f2f2f2;
-        color: #052266;
+        color: #0444AA;
         border-radius: 5px;
         -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
         box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
         transition: 0.3s;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 
         :hover {
-          background-color: #052266;
+          background-color: #0444AA;
           color: #f2f2f2;
           transition: 0.3s;
 
@@ -57,7 +56,7 @@ export const NavigatorMenuStyled = styled.nav<Props>`
         }
 
         SVG {
-          color: #052266;
+          color: #0444AA;
           transition: 0.3s;
         }
       }

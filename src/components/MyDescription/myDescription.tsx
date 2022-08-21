@@ -38,7 +38,9 @@ export const MyDescription: React.FC = () => {
         <div>
           <p>Sou desenvolvedor</p>
           <h2>
-            <span>WEB</span> <span>FULL STACK JR</span>
+            <span>WEB</span> <span>FULL STACK
+              
+            </span>
             <span>,</span>
           </h2>
         </div>

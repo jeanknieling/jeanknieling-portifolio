@@ -1,14 +1,12 @@
 import { ReactNode } from "react";
+import { useScrollContext } from "../../providers";
 import { MainStyled } from "./style";
 
 interface IAvatarProps {
-  onWheel: () => void;
   children: ReactNode;
 }
 
-export const Main: React.FC<IAvatarProps> = ({
-  onWheel,
-  children,
-}) => {
-  return <MainStyled onWheel={onWheel}>{children}</MainStyled>;
+export const Main: React.FC<IAvatarProps> = ({ children }) => {
+  const { handleOnWheel } = useScrollContext();
+  return <MainStyled onWheel={handleOnWheel}>{children}</MainStyled>;
 };

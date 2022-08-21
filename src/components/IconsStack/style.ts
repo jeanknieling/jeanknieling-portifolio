@@ -10,7 +10,7 @@ export const IconsStackStyled = styled.div<Props>`
   justify-content: center;
   align-items: center;
   gap: 25px;
-  background-color: white;
+  background-color: #f2f2f2;
   max-width: 900px;
   min-width: 300px;
   position: relative;

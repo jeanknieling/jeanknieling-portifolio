@@ -17,13 +17,12 @@ export const CVButtonStyled = styled.a<Props>`
 
   button {
     background: transparent;
-    color: #052266;
+    color: #0444AA;
     font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
   }
 
   :hover {
-    background-color: #052266;
+    background-color: #0444AA;
     transition: 0.5s;
     color: #f2f2f2;
 

@@ -25,7 +25,7 @@ export const HeaderProvider: React.FC<IHeaderProviderProps> = ({
   const handleClickHamburguerMenu = useCallback(() => {
     setIsDrawerOpen((oldIsDrawerOpen) => !oldIsDrawerOpen);
   }, []);
-
+  
   return (
     <HeaderContext.Provider value={{ isDrawerOpen, handleClickHamburguerMenu }}>
       {children}

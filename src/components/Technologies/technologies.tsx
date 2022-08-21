@@ -31,16 +31,16 @@ export const Technologies = () => {
         identifier="tools"
       />
       <IconsStack
-        iconsData={iconsStudingStackData}
-        animation={studingAnimation}
-        title="ESTUDANDO"
-        identifier="studing"
-      />
-      <IconsStack
         iconsData={iconsAgileMethodologiesStackData}
         animation={agileMethodologiesAnimation}
         title="MÉTODOLOGIAS ÁGEIS"
         identifier="agileMethodologies"
+      />
+      <IconsStack
+        iconsData={iconsStudingStackData}
+        animation={studingAnimation}
+        title="ESTUDANDO"
+        identifier="studing"
       />
     </TechnologiesStyled>
   );

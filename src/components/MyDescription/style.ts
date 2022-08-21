@@ -8,7 +8,7 @@ export const MyDescriptionStyled = styled.div`
   position: relative;
   gap: 50px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 
   @media (min-width: 700px) {

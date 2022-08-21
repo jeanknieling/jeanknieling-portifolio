@@ -10,7 +10,7 @@ export const HeaderStyled = styled.header`
   position: fixed;
   padding: 0 25px;
   z-index: 1;
-  max-width: 1200px;
+  max-width: 1000px;
 
   div {
     display: flex;
@@ -23,7 +23,7 @@ export const HeaderStyled = styled.header`
       gap: 10px;
 
       h2 {
-        font-size: 18px;
+        font-size: 14px;
         color: #f2f2f2;
         font-weight: 600;
       }
@@ -36,6 +36,7 @@ export const HeaderStyled = styled.header`
         h2 {
           display: none;
           white-space: nowrap;
+          font-size: 18px;
         }
       }
     }

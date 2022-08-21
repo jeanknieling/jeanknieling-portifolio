@@ -15,6 +15,7 @@ interface IScrollContextData {
   toolsAnimation: string;
   studingAnimation: string;
   agileMethodologiesAnimation: string;
+  projectsAnimation: string;
   handleOnWheel: () => void;
 }
 
@@ -23,48 +24,66 @@ const ScrollContext = createContext({} as IScrollContextData);
 export const ScrollProvider: React.FC<IScrollProviderProps> = ({
   children,
 }) => {
-  const [scrollY, setScrollY] = useState(0);
+  const [scrollYState, setScrollYState] = useState(0);
   const [technologiesAnimation, setTechnologiesAnimation] = useState("");
   const [toolsAnimation, setToolsAnimation] = useState("");
   const [studingAnimation, setStudingAnimation] = useState("");
-  const [agileMethodologiesAnimation, setAgileMethodologiesAnimation] = useState("");
+  const [agileMethodologiesAnimation, setAgileMethodologiesAnimation] =
+    useState("");
+  const [projectsAnimation, setProjectsAnimationAnimation] =
+    useState("");
 
   const handleOnWheel = () => {
-    setScrollY(window.scrollY);
+    setScrollYState(window.scrollY);
   };
 
   const divTechnologies = document.querySelector("#technologies");
-  const divTools= document.querySelector("#tools");
-  const divStuding= document.querySelector("#studing");
-  const divAgileMethodologies= document.querySelector("#agileMethodologies");
+  const divTools = document.querySelector("#tools");
+  const divStuding = document.querySelector("#studing");
+  const divAgileMethodologies = document.querySelector("#agileMethodologies");
+  const divProjects = document.querySelector("#projects");
 
   useEffect(() => {
     const windowHeight = window.innerHeight;
-    const elementVisible = 200;
     let divTechnologiesTop: any = divTechnologies?.getBoundingClientRect().top;
     let divToolsTop: any = divTools?.getBoundingClientRect().top;
     let divStudingTop: any = divStuding?.getBoundingClientRect().top;
-    let divAgileMethodologiesTop: any = divAgileMethodologies?.getBoundingClientRect().top;
+    let divAgileMethodologiesTop: any =
+      divAgileMethodologies?.getBoundingClientRect().top;
+    let divProjectsTop: any = divProjects?.getBoundingClientRect().top;
 
-    if (divTechnologiesTop < windowHeight - elementVisible) {
+    if (divTechnologiesTop < windowHeight - 300) {
       setTechnologiesAnimation("leftAnimation 1.2s ease-in-out forwards");
     }
 
-    if (divToolsTop < windowHeight - elementVisible) {
+    if (divToolsTop < windowHeight - 200) {
       setToolsAnimation("leftAnimation 1.2s ease-in-out forwards");
     }
 
-    if (divStudingTop < windowHeight - elementVisible) {
+    if (divStudingTop < windowHeight - 200) {
       setStudingAnimation("leftAnimation 1.2s ease-in-out forwards");
     }
 
-    if (divAgileMethodologiesTop < windowHeight - elementVisible) {
+    if (divAgileMethodologiesTop < windowHeight - 200) {
       setAgileMethodologiesAnimation("leftAnimation 1.2s ease-in-out forwards");
     }
-  }, [scrollY]);
+
+    if (divProjectsTop < windowHeight - 400) {
+      setProjectsAnimationAnimation("leftAnimation 1.2s ease-in-out forwards");
+    }
+  }, [scrollYState]);
 
   return (
-    <ScrollContext.Provider value={{ handleOnWheel, technologiesAnimation, toolsAnimation, studingAnimation, agileMethodologiesAnimation }}>
+    <ScrollContext.Provider
+      value={{
+        handleOnWheel,
+        technologiesAnimation,
+        toolsAnimation,
+        studingAnimation,
+        agileMethodologiesAnimation,
+        projectsAnimation
+      }}
+    >
       {children}
     </ScrollContext.Provider>
   );

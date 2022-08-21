@@ -91,7 +91,7 @@ const iconsToolsStackData = [
 
 const iconsStudingStackData = [
   { name: "AWS", Icon: FaAws },
-  { name: "AWS", Icon: SiMongodb },
+  { name: "MongoDB", Icon: SiMongodb },
   { name: "Material UI", Icon: SiMaterialui },
 ];
 
