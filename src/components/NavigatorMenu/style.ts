@@ -29,6 +29,7 @@ export const NavigatorMenuStyled = styled.nav<Props>`
       cursor: pointer;
 
       a {
+
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
@@ -39,12 +40,14 @@ export const NavigatorMenuStyled = styled.nav<Props>`
         gap: 10px;
         background-color: #f2f2f2;
         color: #0444AA;
+        border: 2px solid transparent;
         border-radius: 5px;
         -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
         box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
         transition: 0.3s;
 
         :hover {
+          border: 2px solid #f2f2f2;
           background-color: #0444AA;
           color: #f2f2f2;
           transition: 0.3s;

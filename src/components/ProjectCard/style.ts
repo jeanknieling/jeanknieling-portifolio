@@ -34,6 +34,7 @@ export const ProjectCardStyled = styled.div`
     h3 {
       font-size: 25px;
       font-weight: bold;
+      line-height: 25px;
     }
 
     p:nth-child(3) {

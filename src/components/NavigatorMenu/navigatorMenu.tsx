@@ -33,7 +33,7 @@ export const NavigatorMenu: React.FC<INavigatorMenuProps> = ({ ...rest }) => {
             <li key={index}>
               <a key={index}>
                 <span>
-                  <Icon size={25} />
+                  <Icon size={20} />
                 </span>
                 {title}
               </a>

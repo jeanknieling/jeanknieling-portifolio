@@ -38,7 +38,7 @@ export const MyProjectsStyled = styled.div<Props>`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
     max-width: 1000px;
   }
 
@@ -51,7 +51,9 @@ export const MyProjectsStyled = styled.div<Props>`
 `;
 
 export const ContainerStyled = styled.div`
-  background-color: #0055ff;
+  background: #0575e6;
+  background: -webkit-linear-gradient(to left, #021b79, #0575e6);
+  background: linear-gradient(to left, #021b79, #0575e6);
 `;
 
 export const LinkStyled = styled.a`
@@ -64,14 +66,14 @@ export const LinkStyled = styled.a`
   color: #333;
   font-size: 25px;
   padding: 15px 20px;
-  -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
 
   :hover {
     color: #f2f2f2;
     background-color: #333;
     transition: 0.3s;
-    -webkit-box-shadow: 3px 3px 3px 1px rgba(255, 255, 255, 0.8);
-    box-shadow: 3px 3px 3px 1px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 3px 3px 3px 2px rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 3px 3px 2px rgba(255, 255, 255, 0.5);
   }
 `;

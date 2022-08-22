@@ -9,6 +9,6 @@ export const TechnologiesStyled = styled.div`
   position: relative;
   gap: 30px;
   width: 100%;
-  padding: 50px;
+  padding: 20px;
   z-index: -1;
 `;

@@ -64,6 +64,8 @@ export const IconsStackStyled = styled.div<Props>`
 
           SVG {
             font-size: 50px;
+            transition: 0.3s;
+
           }
 
           h4 {
