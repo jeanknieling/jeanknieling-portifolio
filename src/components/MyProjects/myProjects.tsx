@@ -21,7 +21,7 @@ export const MyProjects = () => {
             imageDescription="Gif do projeto Motors Shop"
             title="Motors Shop"
             technologies="React, Typescript, React-router-dom, MUI, React-hook-form, Yup, Axios, NodeJS, Express, JWT, TypeORM, PostgreSQL, Docker"
-            description="Projeto full-stack proposto com a finalidade de simular um App de compra e venda de veículos. Aqui treinamos tudo que aprendemos durante o curso, Back-and e Front-end"
+            description="Projeto full-stack proposto com a finalidade de simular um App de compra e venda de veículos."
             linkVercel="https://motors-shop.vercel.app/"
             iconVercel={{ name: "Vercel", Icon: SiVercel }}
             linkGithub="https://github.com/KA-07-Motors-Shop/project-motors-shop-front-end"

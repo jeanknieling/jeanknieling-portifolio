@@ -64,11 +64,14 @@ export const LinkStyled = styled.a`
   color: #333;
   font-size: 25px;
   padding: 15px 20px;
-  -webkit-box-shadow: 5px 4px 5px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 5px 4px 5px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
 
   :hover {
     color: #f2f2f2;
     background-color: #333;
+    transition: 0.3s;
+    -webkit-box-shadow: 3px 3px 3px 1px rgba(255, 255, 255, 0.8);
+    box-shadow: 3px 3px 3px 1px rgba(255, 255, 255, 0.8);
   }
 `;
