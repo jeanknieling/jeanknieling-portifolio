@@ -10,10 +10,16 @@ export const IconsStackStyled = styled.div<Props>`
   justify-content: center;
   align-items: center;
   gap: 25px;
-  background-color: #f2f2f2;
-  max-width: 900px;
-  min-width: 300px;
+  background-color: #ddd;
+  border: 5px solid #0055ff;
+  border-radius: 10px;
+  max-width: 950px;
+  min-width: 310px;
+  width: 100%;
   position: relative;
+  padding: 20px 20px 15px;
+  -webkit-box-shadow: 8px 8px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 8px 8px 5px 1px rgba(0, 0, 0, 0.2);
   left: -300px;
   opacity: 0;
   @keyframes leftAnimation {
@@ -71,7 +77,7 @@ export const IconsStackStyled = styled.div<Props>`
 
             SVG {
               font-size: 70px;
-              transition: 0.5s;
+              transition: 0.3s;
             }
 
             h4 {
@@ -89,12 +95,12 @@ export const IconsStackStyled = styled.div<Props>`
           font-size: 25px;
           font-weight: bold;
           width: 170px;
-          margin-top: 25px;
+          margin-top: 22px;
 
           :hover {
             font-size: 30px;
             color: #0055ff;
-            transition: 0.4s;
+            transition: 0.3s;
           }
         }
       }

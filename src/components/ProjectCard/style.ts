@@ -7,17 +7,18 @@ export const ProjectCardStyled = styled.div`
   border: 2px solid #f2f2f2;
   background-color: #eee;
   border-radius: 5px;
-  gap: 5px;
-  width: 320px;
+  font-size: 15px;
+  width: 310px;
+  min-height: 480px;
   color: #333;
   -webkit-box-shadow: 5px 4px 5px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 4px 5px 3px rgba(0, 0, 0, 0.3);
+  line-height: 20px;
 
   img {
     width: 100%;
     height: 180px;
-    object-fit: cover;
-    object-position: top;
+    object-fit: center;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
@@ -25,8 +26,10 @@ export const ProjectCardStyled = styled.div`
   div:nth-child(2) {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 15px;
     padding: 10px;
+    min-height: 210px;
 
     h3 {
       font-size: 25px;
@@ -34,7 +37,6 @@ export const ProjectCardStyled = styled.div`
     }
 
     p:nth-child(3) {
-      font-size: 15px;
       font-style: italic;
       span {
         font-weight: bold;
@@ -45,8 +47,8 @@ export const ProjectCardStyled = styled.div`
   div:nth-child(3) {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    padding: 10px;
+    gap: 5px;
+    padding: 0 5px 5px;
 
     a {
       background-color: #c2c2c2;

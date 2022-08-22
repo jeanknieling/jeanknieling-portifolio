@@ -10,7 +10,7 @@ export const MyProjectsStyled = styled.div<Props>`
   justify-content: center;
   align-items: center;
   position: relative;
-  gap: 25px;
+  gap: 50px;
   width: 100%;
   padding: 50px;
   position: relative;
@@ -52,4 +52,23 @@ export const MyProjectsStyled = styled.div<Props>`
 
 export const ContainerStyled = styled.div`
   background-color: #0055ff;
+`;
+
+export const LinkStyled = styled.a`
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 310px;
+  color: #333;
+  font-size: 25px;
+  padding: 15px 20px;
+  -webkit-box-shadow: 5px 4px 5px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 4px 5px 3px rgba(0, 0, 0, 0.3);
+
+  :hover {
+    color: #f2f2f2;
+    background-color: #333;
+  }
 `;
