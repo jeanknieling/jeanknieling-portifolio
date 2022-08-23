@@ -16,7 +16,6 @@ interface IScrollContextData {
   studingAnimation: string;
   agileMethodologiesAnimation: string;
   projectsAnimation: string;
-  handleOnWheel: () => void;
 }
 
 const ScrollContext = createContext({} as IScrollContextData);
@@ -30,13 +29,7 @@ export const ScrollProvider: React.FC<IScrollProviderProps> = ({
   const [studingAnimation, setStudingAnimation] = useState("");
   const [agileMethodologiesAnimation, setAgileMethodologiesAnimation] =
     useState("");
-  const [projectsAnimation, setProjectsAnimationAnimation] =
-    useState("");
-
-  const handleOnWheel = () => {
-    setScrollYState(window.scrollY);
-    console.log(window.scrollY)
-  };
+  const [projectsAnimation, setProjectsAnimationAnimation] = useState("");
 
   const divTechnologies = document.querySelector("#technologies");
   const divTools = document.querySelector("#tools");
@@ -52,6 +45,10 @@ export const ScrollProvider: React.FC<IScrollProviderProps> = ({
     let divAgileMethodologiesTop: any =
       divAgileMethodologies?.getBoundingClientRect().top;
     let divProjectsTop: any = divProjects?.getBoundingClientRect().top;
+
+    document.addEventListener("scroll", () => {
+      setScrollYState(window.scrollY);
+    });
 
     if (divTechnologiesTop < windowHeight - 300) {
       setTechnologiesAnimation("leftAnimation 1.2s ease-in-out forwards");
@@ -77,12 +74,11 @@ export const ScrollProvider: React.FC<IScrollProviderProps> = ({
   return (
     <ScrollContext.Provider
       value={{
-        handleOnWheel,
         technologiesAnimation,
         toolsAnimation,
         studingAnimation,
         agileMethodologiesAnimation,
-        projectsAnimation
+        projectsAnimation,
       }}
     >
       {children}
