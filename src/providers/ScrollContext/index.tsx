@@ -35,6 +35,7 @@ export const ScrollProvider: React.FC<IScrollProviderProps> = ({
 
   const handleOnWheel = () => {
     setScrollYState(window.scrollY);
+    console.log(window.scrollY)
   };
 
   const divTechnologies = document.querySelector("#technologies");

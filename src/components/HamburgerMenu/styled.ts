@@ -4,7 +4,7 @@ export const DivContainerStyled = styled.div`
   max-height: 30px;
   max-width: 30px;
 
-  @media (min-width: 700px) {
+  @media (min-width: 750px) {
     display: none;
     position: relative;
     top: -500px;
@@ -41,7 +41,7 @@ export const Label = styled.label`
     top: 16px;
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 750px) {
     display: none;
   }
 `;

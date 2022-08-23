@@ -6,7 +6,7 @@ interface Props {
 
 export const NavigatorMenuStyled = styled.nav<Props>`
   position: absolute;
-  right: ${(props) => (props.isOpen ? "0" : "-700px")};
+  right: ${(props) => (props.isOpen ? "0" : "-760px")};
   top: 99px;
   transition: 1s;
   padding: 15px;
@@ -26,10 +26,9 @@ export const NavigatorMenuStyled = styled.nav<Props>`
     gap: 10px;
 
     li {
-      cursor: pointer;
-
+      
       a {
-
+        cursor: pointer;
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
@@ -39,7 +38,7 @@ export const NavigatorMenuStyled = styled.nav<Props>`
         height: 45px;
         gap: 10px;
         background-color: #f2f2f2;
-        color: #0444AA;
+        color: #0444aa;
         border: 2px solid transparent;
         border-radius: 5px;
         -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
@@ -48,7 +47,7 @@ export const NavigatorMenuStyled = styled.nav<Props>`
 
         :hover {
           border: 2px solid #f2f2f2;
-          background-color: #0444AA;
+          background-color: #0444aa;
           color: #f2f2f2;
           transition: 0.3s;
 
@@ -59,32 +58,38 @@ export const NavigatorMenuStyled = styled.nav<Props>`
         }
 
         SVG {
-          color: #0444AA;
+          color: #0444aa;
           transition: 0.3s;
         }
       }
     }
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 750px) {
     position: static;
     padding: 0;
     display: flex;
     justify-content: flex-end;
     background: transparent;
-    background: -webkit-linear-gradient(transparent);
-    background: linear-gradient(transparent);
 
     ul {
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
+
+      li {
+        
+        a {
+          justify-content: center;
+          width: 158px;
+        }
+      }
     }
   }
 
   @media (min-width: 900px) {
     justify-content: flex-end;
     width: 100%;
-    max-width: 850px;
+    max-width: 700px;
   }
 `;

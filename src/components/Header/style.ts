@@ -6,11 +6,10 @@ export const HeaderStyled = styled.header`
   justify-content: center;
   width: 100%;
   height: 100px;
-  min-height: 100px;
-  position: fixed;
   padding: 0 25px;
-  z-index: 1;
   max-width: 1000px;
+  position: relative;
+  z-index: 1;
 
   div {
     display: flex;
@@ -30,7 +29,7 @@ export const HeaderStyled = styled.header`
     }
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 750px) {
     div {
       section {
         h2 {
@@ -51,7 +50,7 @@ export const HeaderStyled = styled.header`
       section {
         h2 {
           display: block;
-          margin-right: 50px;
+          margin-right: 15px;
         }
       }
     }
@@ -67,5 +66,6 @@ export const ContainerStyled = styled.div`
   position: fixed;
   margin: 0 auto;
   display: flex;
+  z-index: 1;
   justify-content: center;
 `;

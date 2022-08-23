@@ -72,9 +72,6 @@ export const WallpaperStyled = styled.img`
   z-index: -1;
   height: 100%;
   width: 100%;
-  top: 0px;
-  left: 0;
-  opacity: 1;
   object-fit: cover;
 `;
 

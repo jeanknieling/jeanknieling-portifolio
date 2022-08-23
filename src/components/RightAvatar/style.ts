@@ -19,7 +19,7 @@ export const RightAvatarStyled = styled.img<Props>`
   object-position: top;
   padding: 5px;
 
-  @media (min-width: 700px) {
+  @media (min-width: 750px) {
     @keyframes rightAvatarAnimation {
       form {
         right: -50px;
@@ -36,7 +36,6 @@ export const RightAvatarStyled = styled.img<Props>`
   }
 
   @media (min-width: 900px) {
-    top: 22px;
     width: 320px;
     height: 320px;
     transition: 1s;

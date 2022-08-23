@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const MainStyled = styled.main`
-  position: absolute;
-  top: 100px;
   width: 100%;
-  z-index: -3;
+  padding-top: 100px;
 `;

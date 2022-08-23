@@ -1,6 +1,7 @@
 import { CVButtonStyled } from "./style";
 
 interface ICVButtonProps {
+  id: string
   color: string;
   padding: string;
   text: string;

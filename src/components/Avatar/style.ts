@@ -14,7 +14,7 @@ export const AvatarStyled = styled.img<Props>`
   object-position: top;
   padding: 2px;
 
-  @media (min-width: 700px) {
+  @media (min-width: 750px) {
     display: none;
   }
 `;

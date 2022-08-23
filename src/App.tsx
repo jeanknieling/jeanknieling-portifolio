@@ -1,4 +1,5 @@
 import {
+  Footer,
   Header,
   Main,
   MyDescription,
@@ -8,6 +9,7 @@ import {
 import { GlobalStyle } from "./style/global";
 
 const App = () => {
+
   return (
     <div className="App">
       <GlobalStyle />
@@ -17,6 +19,7 @@ const App = () => {
         <Technologies />
         <MyProjects />
       </Main>
+      <Footer/>
     </div>
   );
 };

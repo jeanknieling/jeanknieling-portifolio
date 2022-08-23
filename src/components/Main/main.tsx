@@ -8,5 +8,5 @@ interface IAvatarProps {
 
 export const Main: React.FC<IAvatarProps> = ({ children }) => {
   const { handleOnWheel } = useScrollContext();
-  return <MainStyled onWheel={handleOnWheel}>{children}</MainStyled>;
+  return <MainStyled onWheel={handleOnWheel} onKeyDown={handleOnWheel} onScroll={handleOnWheel} tabIndex={0}>{children}</MainStyled>;
 };

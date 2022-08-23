@@ -7,6 +7,7 @@ interface Props {
 
 export const CVButtonStyled = styled.a<Props>`
   border-radius: 5px;
+  border: 3px solid transparent;
   background-color: ${({ color }) => color && color};
   padding: ${({ padding }) => padding && padding};
   display: flex;
@@ -23,6 +24,7 @@ export const CVButtonStyled = styled.a<Props>`
 
   :hover {
     background-color: #0444AA;
+    border-color: #f2f2f2;
     transition: 0.5s;
     color: #f2f2f2;
 

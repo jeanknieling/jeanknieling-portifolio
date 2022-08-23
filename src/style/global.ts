@@ -33,13 +33,11 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  z-index: -1;
 }
 
 ol, ul {
