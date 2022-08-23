@@ -10,7 +10,7 @@ import { GlobalStyle } from "./style/global";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App" onLoad={() => scrollTo(0, 0)}>
       <GlobalStyle />
       <Header />
       <Main>

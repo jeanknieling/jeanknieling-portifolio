@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { useScrollContext } from "../../providers";
 import { MainStyled } from "./style";
 
 interface IAvatarProps {
@@ -7,6 +6,5 @@ interface IAvatarProps {
 }
 
 export const Main: React.FC<IAvatarProps> = ({ children }) => {
-
-  return <MainStyled >{children}</MainStyled>;
+  return <MainStyled>{children}</MainStyled>;
 };

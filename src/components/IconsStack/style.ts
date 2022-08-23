@@ -29,10 +29,10 @@ export const IconsStackStyled = styled.div<Props>`
     to {
       left: 0px;
       opacity: 1;
+      transition: 0.3s
     }
   }
   animation: ${({ technologiesAnimation }) => technologiesAnimation};
-  transition: 1s;
 
   h3 {
     line-height: 40px;
