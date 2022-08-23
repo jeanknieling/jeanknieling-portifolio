@@ -67,14 +67,15 @@ export const LinkStyled = styled.a`
   -webkit-box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
   border: 5px solid transparent;
-  background-color: #aaa;
+  background-color: #f2f2f2;
   transition: 0.2s;
   color: #333;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   margin: 15px;
 
   :hover {
-    background-color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #f2f2f2;
     transition: 0.2s;
     font-size: 22px;
     width: 320px;

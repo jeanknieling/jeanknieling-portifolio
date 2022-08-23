@@ -1,4 +1,5 @@
 export * from "./Avatar/avatar";
+export * from "./ButtonLeadsToTop/buttonLeadsToTop";
 export * from "./CVButton/cvButton";
 export * from "./Footer/footer";
 export * from "./HamburgerMenu/hamburgerMenu";

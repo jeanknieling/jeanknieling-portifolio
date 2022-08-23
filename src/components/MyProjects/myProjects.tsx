@@ -1,15 +1,15 @@
 import { FaGithub } from "react-icons/fa";
 import { SiVercel } from "react-icons/si";
-import KenzieHubGif from "../../assets/kenzie-hub.gif";
 import KenzieHamburgueriaGif from "../../assets/kenzie-hamburgueria.gif";
-import NuKenzieGif from "../../assets/nu-kenzie.gif";
+import KenzieHubGif from "../../assets/kenzie-hub.gif";
 import MotorsShopGif from "../../assets/motors-shop.gif";
+import NuKenzieGif from "../../assets/nu-kenzie.gif";
 import { ProjectCard } from "../../components";
 import { useScrollContext } from "../../providers";
-import { ContainerStyled, MyProjectsStyled, LinkStyled } from "./style";
+import { ContainerStyled, LinkStyled, MyProjectsStyled } from "./style";
 
 export const MyProjects = () => {
-  const {projectsAnimation} = useScrollContext()
+  const { projectsAnimation } = useScrollContext();
 
   return (
     <ContainerStyled>
@@ -61,7 +61,9 @@ export const MyProjects = () => {
             iconGithub={{ name: "Github", Icon: FaGithub }}
           />
         </section>
-        <LinkStyled href="https://github.com/jeanknieling" target="_blank">Veja mais...</LinkStyled>
+        <LinkStyled href="https://github.com/jeanknieling" target="_blank">
+          Veja mais...
+        </LinkStyled>
       </MyProjectsStyled>
     </ContainerStyled>
   );

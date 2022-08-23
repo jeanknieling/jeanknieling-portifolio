@@ -29,7 +29,6 @@ export const IconsStackStyled = styled.div<Props>`
     to {
       left: 0px;
       opacity: 1;
-      transition: 0.3s
     }
   }
   animation: ${({ technologiesAnimation }) => technologiesAnimation};

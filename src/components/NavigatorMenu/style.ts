@@ -26,7 +26,6 @@ export const NavigatorMenuStyled = styled.nav<Props>`
     gap: 10px;
 
     li {
-      
       a {
         cursor: pointer;
         display: flex;
@@ -39,14 +38,14 @@ export const NavigatorMenuStyled = styled.nav<Props>`
         gap: 10px;
         background-color: #f2f2f2;
         color: #0444aa;
-        border: 2px solid transparent;
+        border: 3px solid transparent;
         border-radius: 5px;
         -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
         box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
         transition: 0.3s;
 
         :hover {
-          border: 2px solid #f2f2f2;
+          border-color: #f2f2f2;
           background-color: #0444aa;
           color: #f2f2f2;
           transition: 0.3s;
@@ -78,7 +77,6 @@ export const NavigatorMenuStyled = styled.nav<Props>`
       width: 100%;
 
       li {
-        
         a {
           justify-content: center;
           width: 158px;

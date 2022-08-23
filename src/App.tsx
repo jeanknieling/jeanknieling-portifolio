@@ -1,4 +1,5 @@
 import {
+  ButtonLeadsToTop,
   Footer,
   Header,
   Main,
@@ -10,13 +11,14 @@ import { GlobalStyle } from "./style/global";
 
 const App = () => {
   return (
-    <div className="App" onLoad={() => scrollTo(0, 0)}>
+    <div className="App">
       <GlobalStyle />
       <Header />
       <Main>
         <MyDescription />
         <Technologies />
         <MyProjects />
+        <ButtonLeadsToTop />
       </Main>
       <Footer />
     </div>

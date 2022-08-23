@@ -18,7 +18,7 @@ export const Technologies = () => {
   } = useScrollContext();
   return (
     <TechnologiesStyled>
-      <IconsStack
+      <IconsStack 
         iconsData={iconsTechStackData}
         animation={technologiesAnimation}
         title="TECNOLOGIAS"

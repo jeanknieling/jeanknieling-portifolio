@@ -9,6 +9,7 @@ export const FooterStyled = styled.footer`
   width: 100%;
   height: 200px;
   padding: 20px;
+  transition: 0s;
 
   ul {
     padding-top: 5px;
@@ -30,5 +31,14 @@ export const FooterStyled = styled.footer`
 
   p:nth-child(3) {
     font-style: italic;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+      color: #0055ff;
+      cursor: pointer;
+      margin-left: 5px;
+    }
   }
 `;

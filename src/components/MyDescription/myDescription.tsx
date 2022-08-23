@@ -11,8 +11,8 @@ import {
 
 export const MyDescription: React.FC = () => {
   return (
-    <ContainerStyled>
-      <WallpaperStyled src={Wallpaper} alt="Gif" />
+    <ContainerStyled >
+      <WallpaperStyled id="myDescription" src={Wallpaper} alt="Gif" />
       <MyDescriptionStyled>
         <RightAvatar
           url={MyPhoto}

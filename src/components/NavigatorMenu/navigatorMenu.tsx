@@ -12,15 +12,16 @@ interface INavigatorMenuProps {
 }
 
 interface IMenu {
+  id: string;
   title: string;
   Icon: IconType;
 }
 
 const menu: Array<IMenu> = [
-  { title: "Sobre mim", Icon: FaRegUser },
-  { title: "Tecnologias", Icon: FaLaptopCode },
-  { title: "Portifólio", Icon: FaClipboardList },
-  { title: "Contato", Icon: FaMailBulk },
+  { title: "Sobre mim", Icon: FaRegUser, id: "#myDescription" },
+  { title: "Tecnologias", Icon: FaLaptopCode, id: "#technologiesSession" },
+  { title: "Portfólio", Icon: FaClipboardList, id: "#projects" },
+  { title: "Contato", Icon: FaMailBulk, id: "#contact" },
 ];
 
 export const NavigatorMenu: React.FC<INavigatorMenuProps> = ({ ...rest }) => {
@@ -28,10 +29,10 @@ export const NavigatorMenu: React.FC<INavigatorMenuProps> = ({ ...rest }) => {
     <NavigatorMenuStyled {...rest}>
       <ul>
         {menu.map((item, index) => {
-          const { title, Icon } = item;
+          const { id, title, Icon } = item;
           return (
             <li key={index}>
-              <a key={index}>
+              <a key={index} href={id}>
                 <span>
                   <Icon size={20} />
                 </span>
