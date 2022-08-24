@@ -24,22 +24,6 @@ const menu: Array<IMenu> = [
   { title: "Contato", Icon: FaMailBulk, id: "#contactSection" },
 ];
 
-const handleClick = (section: Element | null) => {
-  const previousDiv = document.querySelector("#myDescriptionSection")?.getBoundingClientRect().top;
-  const previousDiv2 = document.querySelector("#technologiesSection")?.getBoundingClientRect().top;
-  const previousDiv3 = document.querySelector("#projectsSection")?.getBoundingClientRect().top;
-
-  if (section?.id === "myDescriptionSection") {
-    scrollTo(100, section?.getBoundingClientRect().top - 100);
-  } else if (section?.id === "technologiesSection") {
-    previousDiv && previousDiv2 && scrollTo(0, window.innerHeight - ((previousDiv-previousDiv2)+935));
-  } else if (section?.id === "projectsSection") {
-    previousDiv && previousDiv3 && scrollTo(0, window.innerHeight - ((previousDiv-previousDiv3)+935));
-  } else if (section?.id === "contactSection") {
-    previousDiv && previousDiv3 && scrollTo(0, window.innerHeight - ((previousDiv-previousDiv3)));
-  }
-};
-
 export const NavigatorMenu: React.FC<INavigatorMenuProps> = ({ ...rest }) => {
   return (
     <NavigatorMenuStyled {...rest}>
@@ -48,10 +32,7 @@ export const NavigatorMenu: React.FC<INavigatorMenuProps> = ({ ...rest }) => {
           const { id, title, Icon } = item;
           return (
             <li key={index}>
-              <a
-                key={index}
-                onClick={() => handleClick(document.querySelector(`${id}`))}
-              >
+              <a key={index} href={id}>
                 <span>
                   <Icon size={20} />
                 </span>

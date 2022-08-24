@@ -68,4 +68,12 @@ export const ContainerStyled = styled.div`
   display: flex;
   z-index: 1;
   justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+
+
+  :hover {
+    opacity: 1;
+    transition: 0.5s
+  }
 `;

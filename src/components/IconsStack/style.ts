@@ -77,7 +77,7 @@ export const IconsStackStyled = styled.div<Props>`
             color: #0055ff;
 
             SVG {
-              font-size: 70px;
+              font-size: 65px;
               transition: 0.3s;
             }
 
