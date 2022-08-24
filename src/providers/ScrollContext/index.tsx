@@ -35,7 +35,7 @@ export const ScrollProvider: React.FC<IScrollProviderProps> = ({
   const divTools = document.querySelector("#tools");
   const divStuding = document.querySelector("#studing");
   const divAgileMethodologies = document.querySelector("#agileMethodologies");
-  const divProjects = document.querySelector("#projects");
+  const divProjects = document.querySelector("#projectsSection");
 
   useEffect(() => {
     const windowHeight = window.innerHeight;

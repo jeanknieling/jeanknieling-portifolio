@@ -11,9 +11,9 @@ import {
 
 export const MyDescription: React.FC = () => {
   return (
-    <ContainerStyled >
-      <WallpaperStyled id="myDescription" src={Wallpaper} alt="Gif" />
-      <MyDescriptionStyled>
+    <ContainerStyled>
+      <WallpaperStyled src={Wallpaper} alt="Gif" />
+      <MyDescriptionStyled id="myDescriptionSection">
         <RightAvatar
           url={MyPhoto}
           alt="Foto de perfil"
@@ -38,9 +38,7 @@ export const MyDescription: React.FC = () => {
         <div>
           <p>Sou desenvolvedor</p>
           <h2>
-            <span>WEB</span> <span>FULL STACK
-              
-            </span>
+            <span>WEB</span> <span>FULL STACK</span>
             <span>,</span>
           </h2>
         </div>

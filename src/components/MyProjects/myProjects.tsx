@@ -13,7 +13,10 @@ export const MyProjects = () => {
 
   return (
     <ContainerStyled>
-      <MyProjectsStyled id="projects" projectsAnimation={projectsAnimation}>
+      <MyProjectsStyled
+        id="projectsSection"
+        projectsAnimation={projectsAnimation}
+      >
         <h3>MEUS PROJETOS</h3>
         <section>
           <ProjectCard

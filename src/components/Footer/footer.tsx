@@ -4,7 +4,7 @@ import { FooterStyled } from "./style";
 
 export const Footer = () => {
   return (
-    <FooterStyled id="contact">
+    <FooterStyled id="contactSection">
       <SocialNetworks />
       <p>
         <MdCopyright />
