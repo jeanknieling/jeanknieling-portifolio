@@ -84,7 +84,7 @@ export const IconsStackStyled = styled.div<Props>`
             h4 {
               opacity: 1;
               text-align: center;
-              transition: 0.5s;
+              transition: 0.3s;
               font-weight: bold;
             }
           }
@@ -97,6 +97,8 @@ export const IconsStackStyled = styled.div<Props>`
           font-weight: bold;
           width: 170px;
           margin-top: 22px;
+          transition: 0.3s;
+
 
           :hover {
             font-size: 30px;

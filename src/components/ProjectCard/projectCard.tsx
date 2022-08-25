@@ -1,7 +1,6 @@
 import { IconType } from "react-icons";
 import { ProjectCardStyled } from "./style";
 
-
 interface IProjectsCardProps {
   imageUrl: string;
   imageDescription: string;
@@ -9,9 +8,9 @@ interface IProjectsCardProps {
   technologies: string;
   description: string;
   linkVercel: string;
-  iconVercel: {name: string, Icon: IconType};
+  iconVercel: { name: string; Icon: IconType };
   linkGithub: string;
-  iconGithub: {name: string, Icon: IconType};
+  iconGithub: { name: string; Icon: IconType };
 }
 export const ProjectCard: React.FC<IProjectsCardProps> = ({
   imageUrl,
@@ -30,11 +29,20 @@ export const ProjectCard: React.FC<IProjectsCardProps> = ({
       <div>
         <h3>{title}</h3>
         <p>{description}</p>
-        <p><span>Tecnologias: </span>{technologies}</p>
+        <p>
+          <span>Tecnologias: </span>
+          {technologies}
+        </p>
       </div>
       <div>
-        <a href={linkVercel} target="_blank">{iconVercel.name}{<iconVercel.Icon/>}</a>
-        <a href={linkGithub} target="_blank">{iconGithub.name}{<iconGithub.Icon/>}</a>
+        <a href={linkVercel} target="_blank">
+          {iconVercel.name}
+          {<iconVercel.Icon />}
+        </a>
+        <a href={linkGithub} target="_blank">
+          {iconGithub.name}
+          {<iconGithub.Icon />}
+        </a>
       </div>
     </ProjectCardStyled>
   );

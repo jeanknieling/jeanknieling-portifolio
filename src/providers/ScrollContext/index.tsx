@@ -16,6 +16,10 @@ interface IScrollContextData {
   studingAnimation: string;
   agileMethodologiesAnimation: string;
   projectsAnimation: string;
+  scrollYState: number;
+  divTechnologiesTop: number;
+  divProjectsTop: number;
+  divContactTop: number;
 }
 
 const ScrollContext = createContext({} as IScrollContextData);
@@ -35,17 +39,19 @@ export const ScrollProvider: React.FC<IScrollProviderProps> = ({
   const divTools = document.querySelector("#tools");
   const divStuding = document.querySelector("#studing");
   const divAgileMethodologies = document.querySelector("#agileMethodologies");
-  const divProjects = document.querySelector("#projectsSection");
+  const divProjectsSection = document.querySelector("#projectsSection");
+  const divContactSection = document.querySelector("#contactSection");
+  const windowHeight = window.innerHeight;
+
+  let divTechnologiesTop: any = divTechnologies?.getBoundingClientRect().top;
+  let divToolsTop: any = divTools?.getBoundingClientRect().top;
+  let divStudingTop: any = divStuding?.getBoundingClientRect().top;
+  let divAgileMethodologiesTop: any =
+    divAgileMethodologies?.getBoundingClientRect().top;
+  let divProjectsTop: any = divProjectsSection?.getBoundingClientRect().top;
+  let divContactTop: any = divContactSection?.getBoundingClientRect().top;
 
   useEffect(() => {
-    const windowHeight = window.innerHeight;
-    let divTechnologiesTop: any = divTechnologies?.getBoundingClientRect().top;
-    let divToolsTop: any = divTools?.getBoundingClientRect().top;
-    let divStudingTop: any = divStuding?.getBoundingClientRect().top;
-    let divAgileMethodologiesTop: any =
-      divAgileMethodologies?.getBoundingClientRect().top;
-    let divProjectsTop: any = divProjects?.getBoundingClientRect().top;
-
     document.addEventListener("scroll", () => {
       setScrollYState(window.scrollY);
     });
@@ -79,6 +85,10 @@ export const ScrollProvider: React.FC<IScrollProviderProps> = ({
         studingAnimation,
         agileMethodologiesAnimation,
         projectsAnimation,
+        scrollYState,
+        divTechnologiesTop,
+        divProjectsTop,
+        divContactTop
       }}
     >
       {children}

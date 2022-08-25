@@ -26,7 +26,7 @@ export const Label = styled.label`
     width: 100%;
     border-radius: 30px;
     background: #F2F2F2;
-    transition: 0.6s;
+    transition: 0.3s;
   }
 
   span:nth-child(1) {

@@ -4,7 +4,7 @@ import KenzieHamburgueriaGif from "../../assets/kenzie-hamburgueria.gif";
 import KenzieHubGif from "../../assets/kenzie-hub.gif";
 import MotorsShopGif from "../../assets/motors-shop.gif";
 import NuKenzieGif from "../../assets/nu-kenzie.gif";
-import { ProjectCard } from "../../components";
+import { BlockerDiv, ProjectCard } from "../../components";
 import { useScrollContext } from "../../providers";
 import { ContainerStyled, LinkStyled, MyProjectsStyled } from "./style";
 
@@ -13,10 +13,8 @@ export const MyProjects = () => {
 
   return (
     <ContainerStyled>
-      <MyProjectsStyled
-        id="projectsSection"
-        projectsAnimation={projectsAnimation}
-      >
+      <MyProjectsStyled projectsAnimation={projectsAnimation}>
+        <BlockerDiv id="projectsSection" />
         <h3>MEUS PROJETOS</h3>
         <section>
           <ProjectCard

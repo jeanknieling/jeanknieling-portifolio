@@ -1,7 +1,7 @@
 import { useScrollContext } from "../../providers";
 import { useIconsContext } from "../../providers/IconsContext";
 import { TechnologiesStyled } from "../Technologies/style";
-import { IconsStack } from "./../../components";
+import { BlockerDiv, IconsStack } from "./../../components";
 
 export const Technologies = () => {
   const {
@@ -17,8 +17,10 @@ export const Technologies = () => {
     agileMethodologiesAnimation,
   } = useScrollContext();
   return (
-    <TechnologiesStyled id="technologiesSection">
-      <IconsStack 
+    <TechnologiesStyled>
+      <BlockerDiv id="technologiesSection" />
+
+      <IconsStack
         iconsData={iconsTechStackData}
         animation={technologiesAnimation}
         title="TECNOLOGIAS"

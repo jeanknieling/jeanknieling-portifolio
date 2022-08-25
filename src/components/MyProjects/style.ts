@@ -11,7 +11,7 @@ export const MyProjectsStyled = styled.div<Props>`
   align-items: center;
   gap: 50px;
   width: 100%;
-  padding: 50px;
+  padding: 25px;
   position: relative;
   left: -300px;
   opacity: 0;
@@ -69,16 +69,15 @@ export const LinkStyled = styled.a`
   border: 5px solid transparent;
   background-color: #f2f2f2;
   transition: 0.2s;
-  color: #333;
+  color: rgba(0, 0, 0, 1);
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   margin: 15px;
 
   :hover {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 1);
     color: #f2f2f2;
     transition: 0.2s;
     font-size: 22px;
-    width: 320px;
     height: 60px;
   }
 `;

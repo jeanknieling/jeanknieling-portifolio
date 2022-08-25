@@ -1,4 +1,9 @@
-import { CVButton, RightAvatar, SocialNetworks } from "../../components";
+import {
+  BlockerDiv,
+  CVButton,
+  RightAvatar,
+  SocialNetworks,
+} from "../../components";
 import MyPhoto from "./../../assets/avatar.jpeg";
 import Wallpaper from "./../../assets/wallpaper.jpg";
 
@@ -13,7 +18,8 @@ export const MyDescription: React.FC = () => {
   return (
     <ContainerStyled>
       <WallpaperStyled src={Wallpaper} alt="Gif" />
-      <MyDescriptionStyled id="myDescriptionSection">
+      <MyDescriptionStyled>
+        <BlockerDiv id="myDescriptionSection" />
         <RightAvatar
           url={MyPhoto}
           alt="Foto de perfil"

@@ -1,13 +1,11 @@
-import { useEffect } from "react";
 import { useHeaderContext } from "../../providers/HeaderContext";
 import MyPhoto from "./../../assets/avatar.jpeg";
 import { Avatar, HamburgerMenu, NavigatorMenu } from "./../../components";
 import { ContainerStyled, HeaderStyled } from "./style";
 
-
 export const Header = () => {
   const { isDrawerOpen } = useHeaderContext();
-  
+
   return (
     <ContainerStyled>
       <HeaderStyled>

@@ -1,5 +1,6 @@
 import {
   ButtonLeadsToTop,
+  EmailContactSection,
   Footer,
   Header,
   Main,
@@ -19,6 +20,7 @@ const App = () => {
         <Technologies />
         <MyProjects />
         <ButtonLeadsToTop />
+        <EmailContactSection />
       </Main>
       <Footer />
     </div>

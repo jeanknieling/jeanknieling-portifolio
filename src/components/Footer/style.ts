@@ -29,7 +29,7 @@ export const FooterStyled = styled.footer`
     }
   }
 
-  p:nth-child(3) {
+  p:nth-child(4) {
     font-style: italic;
     display: flex;
     justify-content: center;

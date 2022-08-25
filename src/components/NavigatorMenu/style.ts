@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 interface Props {
   isOpen: boolean;
+  atualSection: string;
 }
 
 export const NavigatorMenuStyled = styled.nav<Props>`
@@ -58,9 +59,59 @@ export const NavigatorMenuStyled = styled.nav<Props>`
 
         SVG {
           color: #0444aa;
-          transition: 0.3s;
         }
       }
+    }
+  }
+  .sobre {
+    background-color: ${({ atualSection }) =>
+      atualSection === "Sobre" ? "#0444aa" : "#f2f2f2"};
+    border-color: #f2f2f2;
+    color: ${({ atualSection }) =>
+      atualSection === "Sobre" ? "#f2f2f2" : "#0444aa"};
+
+    SVG {
+      color: ${({ atualSection }) =>
+        atualSection === "Sobre" ? "#f2f2f2" : "#0444aa"};
+    }
+  }
+
+  .tecnologias {
+    background-color: ${({ atualSection }) =>
+      atualSection === "Tecnologias" ? "#0444aa" : "#f2f2f2"};
+    border-color: #f2f2f2;
+    color: ${({ atualSection }) =>
+      atualSection === "Tecnologias" ? "#f2f2f2" : "#0444aa"};
+
+    SVG {
+      color: ${({ atualSection }) =>
+        atualSection === "Tecnologias" ? "#f2f2f2" : "#0444aa"};
+    }
+  }
+
+  .portfolio {
+    background-color: ${({ atualSection }) =>
+      atualSection === "Portfolio" ? "#0444aa" : "#f2f2f2"};
+    border-color: #f2f2f2;
+    color: ${({ atualSection }) =>
+      atualSection === "Portfolio" ? "#f2f2f2" : "#0444aa"};
+
+    SVG {
+      color: ${({ atualSection }) =>
+        atualSection === "Portfolio" ? "#f2f2f2" : "#0444aa"};
+    }
+  }
+
+  .contato {
+    background-color: ${({ atualSection }) =>
+      atualSection === "Contato" ? "#0444aa" : "#f2f2f2"};
+    border-color: #f2f2f2;
+    color: ${({ atualSection }) =>
+      atualSection === "Contato" ? "#f2f2f2" : "#0444aa"};
+
+    SVG {
+      color: ${({ atualSection }) =>
+        atualSection === "Contato" ? "#f2f2f2" : "#0444aa"};
     }
   }
 
