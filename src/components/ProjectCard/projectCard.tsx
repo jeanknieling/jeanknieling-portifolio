@@ -7,8 +7,8 @@ interface IProjectsCardProps {
   title: string;
   technologies: string;
   description: string;
-  linkVercel: string;
-  iconVercel: { name: string; Icon: IconType };
+  projectLink: string;
+  repoIcon: { name: string; Icon: IconType };
   linkGithub: string;
   iconGithub: { name: string; Icon: IconType };
 }
@@ -18,32 +18,34 @@ export const ProjectCard: React.FC<IProjectsCardProps> = ({
   title,
   technologies,
   description,
-  linkVercel,
-  iconVercel,
+  projectLink: linkVercel,
+  repoIcon: iconVercel,
   linkGithub,
   iconGithub,
 }) => {
   return (
     <ProjectCardStyled>
       <img src={imageUrl} alt={imageDescription} width="150" />
-      <div>
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <p>
-          <span>Tecnologias: </span>
-          {technologies}
-        </p>
-      </div>
-      <div>
-        <a href={linkVercel} target="_blank">
-          {iconVercel.name}
-          {<iconVercel.Icon />}
-        </a>
-        <a href={linkGithub} target="_blank">
-          {iconGithub.name}
-          {<iconGithub.Icon />}
-        </a>
-      </div>
+      <section>
+        <div>
+          <h3>{title}</h3>
+          <p>{description}</p>
+          <p>
+            <span>Tecnologias: </span>
+            {technologies}
+          </p>
+        </div>
+        <div>
+          <a href={linkVercel} target="_blank">
+            {iconVercel.name}
+            {<iconVercel.Icon />}
+          </a>
+          <a href={linkGithub} target="_blank">
+            {iconGithub.name}
+            {<iconGithub.Icon />}
+          </a>
+        </div>
+      </section>
     </ProjectCardStyled>
   );
 };

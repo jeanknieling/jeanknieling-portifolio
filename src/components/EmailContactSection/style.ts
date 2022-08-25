@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const StyledEmailContactSection = styled.div`
+interface Props {
+  contactAnimation: string;
+}
+
+export const StyledEmailContactSection = styled.div<Props>`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -9,6 +13,19 @@ export const StyledEmailContactSection = styled.div`
   color:  rgba(0, 0, 0, 1);
   padding: 25px;
   position: relative;
+  left: -300px;
+  opacity: 0;
+  @keyframes leftAnimation {
+    form {
+      left: -300px;
+    }
+    to {
+      left: 0px;
+      opacity: 1;
+    }
+  }
+  animation: ${({ contactAnimation }) => contactAnimation};
+  transition: 0.2s;
 
   h3 {
     text-align: center;
@@ -58,8 +75,6 @@ export const StyledEmailContactSection = styled.div`
       background-color: #f2f2f2;
       -webkit-box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
       box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
-
-      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
       transition: 0.2s;
 
       :hover {

@@ -7,7 +7,7 @@ interface Props {
 
 export const NavigatorMenuStyled = styled.nav<Props>`
   position: absolute;
-  right: ${(props) => (props.isOpen ? "0" : "-760px")};
+  right: ${(props) => (props.isOpen ? "0" : "-1000px")};
   top: 99px;
   transition: 1s;
   padding: 15px;

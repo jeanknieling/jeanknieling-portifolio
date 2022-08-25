@@ -13,7 +13,6 @@ import {
   PStyled,
   WallpaperStyled,
 } from "./style";
-
 export const MyDescription: React.FC = () => {
   return (
     <ContainerStyled>

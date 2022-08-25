@@ -11,7 +11,7 @@ export const MyProjectsStyled = styled.div<Props>`
   align-items: center;
   gap: 50px;
   width: 100%;
-  padding: 25px;
+  padding: 25px 5px;
   position: relative;
   left: -300px;
   opacity: 0;
@@ -28,6 +28,7 @@ export const MyProjectsStyled = styled.div<Props>`
   transition: 0.2s;
 
   h3 {
+    text-align: center;
     font-size: 32px;
     font-weight: bold;
   }
@@ -38,7 +39,7 @@ export const MyProjectsStyled = styled.div<Props>`
     justify-content: center;
     align-items: center;
     gap: 25px;
-    max-width: 1000px;
+    max-width: 1200px;
   }
 
   @media (min-width: 600px) {
@@ -70,7 +71,6 @@ export const LinkStyled = styled.a`
   background-color: #f2f2f2;
   transition: 0.2s;
   color: rgba(0, 0, 0, 1);
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   margin: 15px;
 
   :hover {

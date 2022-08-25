@@ -13,11 +13,13 @@ export const RightAvatarStyled = styled.img<Props>`
   position: absolute;
   right: 0px;
   display: none;
-  top: 50px;
+  top: 40px;
   opacity: 0;
   object-fit: cover;
   object-position: top;
   padding: 5px;
+  transition: 1s;
+
 
   @media (min-width: 750px) {
     @keyframes rightAvatarAnimation {
@@ -31,13 +33,12 @@ export const RightAvatarStyled = styled.img<Props>`
     }
 
     display: block;
-    animation: rightAvatarAnimation 3s forwards;
-    transition: 0.5s;
+    animation: rightAvatarAnimation 1s forwards;
   }
 
   @media (min-width: 900px) {
-    width: 320px;
-    height: 320px;
-    transition: 0.5s;
+    width: 350px;
+    height: 350px;
+    transition: 1s;
   }
 `;

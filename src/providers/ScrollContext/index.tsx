@@ -15,6 +15,7 @@ interface IScrollContextData {
   toolsAnimation: string;
   studingAnimation: string;
   agileMethodologiesAnimation: string;
+  contactAnimation: string;
   projectsAnimation: string;
   scrollYState: number;
   divTechnologiesTop: number;
@@ -33,7 +34,8 @@ export const ScrollProvider: React.FC<IScrollProviderProps> = ({
   const [studingAnimation, setStudingAnimation] = useState("");
   const [agileMethodologiesAnimation, setAgileMethodologiesAnimation] =
     useState("");
-  const [projectsAnimation, setProjectsAnimationAnimation] = useState("");
+  const [projectsAnimation, setProjectsAnimation] = useState("");
+  const [contactAnimation, setContactAnimation] = useState("");
 
   const divTechnologies = document.querySelector("#technologies");
   const divTools = document.querySelector("#tools");
@@ -57,23 +59,27 @@ export const ScrollProvider: React.FC<IScrollProviderProps> = ({
     });
 
     if (divTechnologiesTop < windowHeight - 300) {
-      setTechnologiesAnimation("leftAnimation 1.2s ease-in-out forwards");
+      setTechnologiesAnimation("leftAnimation 1s ease-in-out forwards");
     }
 
     if (divToolsTop < windowHeight - 200) {
-      setToolsAnimation("leftAnimation 1.2s ease-in-out forwards");
+      setToolsAnimation("leftAnimation 1s ease-in-out forwards");
     }
 
     if (divStudingTop < windowHeight - 200) {
-      setStudingAnimation("leftAnimation 1.2s ease-in-out forwards");
+      setStudingAnimation("leftAnimation 1s ease-in-out forwards");
     }
 
     if (divAgileMethodologiesTop < windowHeight - 200) {
-      setAgileMethodologiesAnimation("leftAnimation 1.2s ease-in-out forwards");
+      setAgileMethodologiesAnimation("leftAnimation 1s ease-in-out forwards");
     }
 
     if (divProjectsTop < windowHeight - 400) {
-      setProjectsAnimationAnimation("leftAnimation 1.2s ease-in-out forwards");
+      setProjectsAnimation("leftAnimation 1s ease-in-out forwards");
+    }
+
+    if (divContactTop < windowHeight - 400) {
+      setContactAnimation("leftAnimation 1s ease-in-out forwards");
     }
   }, [scrollYState]);
 
@@ -85,10 +91,11 @@ export const ScrollProvider: React.FC<IScrollProviderProps> = ({
         studingAnimation,
         agileMethodologiesAnimation,
         projectsAnimation,
+        contactAnimation,
         scrollYState,
         divTechnologiesTop,
         divProjectsTop,
-        divContactTop
+        divContactTop,
       }}
     >
       {children}

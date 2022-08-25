@@ -10,6 +10,18 @@ export const HeaderStyled = styled.header`
   max-width: 1000px;
   position: relative;
   z-index: 1;
+  left: -300px;
+  opacity: 0;
+  @keyframes leftAnimation {
+    form {
+      left: -300px;
+    }
+    to {
+      left: 0px;
+      opacity: 1;
+    }
+  }
+  animation: leftAnimation 1.2s ease-in-out forwards;
 
   div {
     display: flex;

@@ -5,11 +5,23 @@ export const MyDescriptionStyled = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 30px 25px;
-  position: relative;
   gap: 50px;
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  position: relative;
+  left: -300px;
+  opacity: 0;
+  @keyframes leftAnimation {
+    form {
+      left: -300px;
+    }
+    to {
+      left: 0px;
+      opacity: 1;
+    }
+  }
+  animation: leftAnimation 1.2s ease-in-out forwards;
 
   @media (min-width: 700px) {
     gap: 70px;

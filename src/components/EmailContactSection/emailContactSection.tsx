@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { BlockerDiv } from "../../components";
+import { useScrollContext } from "../../providers";
 import { StyledEmailContactSection } from "./style";
 
 export const EmailContactSection = () => {
@@ -24,8 +25,11 @@ export const EmailContactSection = () => {
     e.target.reset();
   };
 
+  const {contactAnimation} = useScrollContext();
+  
   return (
-    <StyledEmailContactSection>
+
+    <StyledEmailContactSection contactAnimation={contactAnimation}>
       <BlockerDiv id="contactSection" />
 
       <h3>CONTATO POR EMAIL</h3>
