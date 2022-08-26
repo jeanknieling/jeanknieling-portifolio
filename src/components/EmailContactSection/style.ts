@@ -72,14 +72,15 @@ export const StyledEmailContactSection = styled.div<Props>`
       height: 60px;
       font-size: 22px;
       font-weight: bold;
-      background-color: #f2f2f2;
+      background-color: #0055ff;
+      border: none;
       -webkit-box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
       box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
+      color: #f2f2f2;
       transition: 0.2s;
 
       :hover {
         background-color: rgba(0, 0, 0, 1);
-        color: #f2f2f2;
         transition: 0.2s;
         font-size: 25px;
       }

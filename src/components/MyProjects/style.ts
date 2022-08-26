@@ -9,7 +9,7 @@ export const MyProjectsStyled = styled.div<Props>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 25px;
   width: 100%;
   padding: 25px 5px;
   position: relative;
@@ -38,7 +38,7 @@ export const MyProjectsStyled = styled.div<Props>`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
     max-width: 1200px;
   }
 

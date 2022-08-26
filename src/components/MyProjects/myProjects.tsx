@@ -2,9 +2,10 @@ import { FaGithub, FaGithubSquare } from "react-icons/fa";
 import { SiVercel } from "react-icons/si";
 import KenzieHamburgueriaGif from "../../assets/kenzie-hamburgueria.gif";
 import KenzieHubGif from "../../assets/kenzie-hub.gif";
+import MedalBoardGif from "../../assets/medal-board.gif";
 import MotorsShopGif from "../../assets/motors-shop.gif";
 import NuKenzieGif from "../../assets/nu-kenzie.gif";
-import MedalBoardGif from "../../assets/medal-board.gif";
+import KenzieShopGif from "../../assets/kenzie-shop.gif";
 import { BlockerDiv, ProjectCard } from "../../components";
 import { useScrollContext } from "../../providers";
 import { ContainerStyled, LinkStyled, MyProjectsStyled } from "./style";
@@ -75,6 +76,18 @@ export const MyProjects = () => {
             projectLink="https://jeanknieling.github.io/extra-quadro-medalhas-m2-sprint-3a-jeanknieling/"
             repoIcon={{ name: "GitHub Pages", Icon: FaGithubSquare }}
             linkGithub="https://github.com/jeanknieling/extra-quadro-medalhas-m2-sprint-3a-jeanknieling"
+            iconGithub={{ name: "GitHub", Icon: FaGithub }}
+          />
+
+          <ProjectCard
+            imageUrl={KenzieShopGif}
+            imageDescription="Gif do projeto Kenzie Shop"
+            title="Kenzie Shop"
+            technologies="HTML, CSS e Javascript"
+            description="Projeto proposto com a finalidade de simular um E-commerce de produtos digitais, onde ptaticamos as rotas de páginas, responsividade e o uso do Context API"
+            projectLink="https://react-entrega-s3-kenzieshop-jeanknieling.vercel.app/"
+            repoIcon={{ name: "Vercel", Icon: SiVercel }}
+            linkGithub="https://github.com/jeanknieling/react-entrega-s3-kenzishop-com-context-api-jeanknieling"
             iconGithub={{ name: "GitHub", Icon: FaGithub }}
           />
         </section>

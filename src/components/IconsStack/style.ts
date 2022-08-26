@@ -51,6 +51,7 @@ export const IconsStackStyled = styled.div<Props>`
     li {
       a {
         color: black;
+        cursor: pointer;
 
         div {
           display: flex;
@@ -64,7 +65,6 @@ export const IconsStackStyled = styled.div<Props>`
           SVG {
             font-size: 50px;
             transition: 0.3s;
-
           }
 
           h4 {
@@ -77,14 +77,14 @@ export const IconsStackStyled = styled.div<Props>`
             color: #0055ff;
 
             SVG {
-              font-size: 65px;
-              transition: 0.3s;
+              font-size: 75px;
+            transition: 0.3s;
+
             }
 
             h4 {
               opacity: 1;
               text-align: center;
-              transition: 0.3s;
               font-weight: bold;
             }
           }
@@ -103,7 +103,7 @@ export const IconsStackStyled = styled.div<Props>`
           :hover {
             font-size: 30px;
             color: #0055ff;
-            transition: 0.3s;
+            transition: 0.2s;
           }
         }
       }
