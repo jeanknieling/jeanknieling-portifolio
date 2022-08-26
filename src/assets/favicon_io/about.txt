@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Signika
-- Font Author: Copyright 2018 The Signika Project Authors (https://github.com/googlefonts/Signika).
-- Font Source: http://fonts.gstatic.com/s/signika/v19/vEFO2_JTCgwQ5ejvMV0O96D01E8J0tKwG5bGhs_cfKe1.ttf
+- Font Title: Manrope
+- Font Author: Copyright 2019 The Manrope Project Authors (https://github.com/sharanda/manrope)
+- Font Source: http://fonts.gstatic.com/s/manrope/v13/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F87jxeN7B.ttf
 - Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
