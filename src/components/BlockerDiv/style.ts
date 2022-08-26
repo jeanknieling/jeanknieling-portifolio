@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BlockerDivStyled = styled.div`
-  height: 99px;
+  height: 9.9rem;
   position: absolute;
-  top: -99px;
+  top: -9.9rem;
 `;

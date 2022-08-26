@@ -6,8 +6,8 @@ interface Props {
 }
 
 export const CVButtonStyled = styled.a<Props>`
-  border-radius: 5px;
-  border: 3px solid transparent;
+  border-radius: 0.5rem;
+  border: 0.3rem solid transparent;
   background-color: ${({ color }) => color && color};
   padding: ${({ padding }) => padding && padding};
   display: flex;
@@ -15,26 +15,26 @@ export const CVButtonStyled = styled.a<Props>`
   align-items: center;
   cursor: pointer;
   transition: 0.5s;
+  white-space: nowrap;
 
   button {
     background: transparent;
-    color: #0444AA;
+    color: var(--blue-2);
     font-weight: bold;
   }
 
   :hover {
-    background-color: #0444AA;
-    border-color: #f2f2f2;
+    background-color: var(--blue-2);
+    border-color: var(--white);
     transition: 0.5s;
-    color: #f2f2f2;
+    color: var(--white);
 
     button {
-      color: #f2f2f2;
+      color: var(--white);
     }
   }
 
-
   @media (min-width: 600px) {
-    width: 180px;
+    width: 18rem;
   }
 `;

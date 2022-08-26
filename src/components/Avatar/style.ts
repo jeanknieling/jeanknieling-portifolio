@@ -12,7 +12,7 @@ export const AvatarStyled = styled.img<Props>`
   height: ${({ size }) => (size && size)};
   object-fit: cover;
   object-position: top;
-  padding: 2px;
+  padding: 0.2rem;
 
   @media (min-width: 750px) {
     display: none;

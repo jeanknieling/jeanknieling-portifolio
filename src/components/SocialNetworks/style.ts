@@ -10,16 +10,16 @@ export const SocialNetworksStyled = styled.section`
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        width: 40px;
-        height: 40px;
+        width: 4rem;
+        height: 4rem;
 
         SVG {
-          font-size: 40px;
-          color: #0055ff;
+          font-size: 4rem;
+          color: var(--blue-0);
 
           :hover {
-            color: #f2f2f2;
-            font-size: 50px;
+            color: var(--white);
+            font-size: 5rem;
             transition: 0.5s;
           }
         }
@@ -27,16 +27,16 @@ export const SocialNetworksStyled = styled.section`
     }
 
     @media (min-width: 600px) {
-      gap: 20px;
+      gap: 2rem;
       li {
         a {
           SVG {
-            font-size: 50px;
+            font-size: 5rem;
             :hover {
-            color: #f2f2f2;
-            font-size: 60px;
-            transition: 0.5s;
-          }
+              color: var(--white);
+              font-size: 6rem;
+              transition: 0.5s;
+            }
           }
         }
       }

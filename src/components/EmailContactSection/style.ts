@@ -9,18 +9,19 @@ export const StyledEmailContactSection = styled.div<Props>`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 25px;
-  color:  rgba(0, 0, 0, 1);
-  padding: 25px;
+  height: 650px;
+  gap: 2.5rem;
+  color: var(--black-2);
+  padding: 2.5rem;
   position: relative;
-  left: -300px;
+  left: -30rem;
   opacity: 0;
   @keyframes leftAnimation {
     form {
-      left: -300px;
+      left: -30rem;
     }
     to {
-      left: 0px;
+      left: 0;
       opacity: 1;
     }
   }
@@ -29,60 +30,104 @@ export const StyledEmailContactSection = styled.div<Props>`
 
   h3 {
     text-align: center;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: bold;
   }
 
   form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    max-width: 700px;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 70rem;
     width: 100%;
 
-    label {
+    div {
       display: flex;
-      flex-direction: column;
-      gap: 5px;
-      font-weight: 600;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0.5rem;
+      width: 100%;
+
+      input {
+        border: 0.2rem solid var(--black-2);
+        border-radius: 1rem;
+        height: 5.4rem;
+        padding: 0 1.5rem;
+        width: 100%;
+        -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0.2rem var(--black-0);
+        box-shadow: 0.3rem 0.3rem 0.3rem 0.2rem var(--black-0);
+
+        ::placeholder {
+          font-size: 1.6rem;
+        }
+
+        :focus {
+          outline: 0.3rem solid var(--blue-0);
+          border-color: transparent;
+        }
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-weight: 600;
+      }
 
       textarea {
-        border-radius: 10px;
-        max-width: 100%;
+        display: flex;
+        border-radius: 1rem;
         resize: none;
-        height: 112px;
-        padding: 15px;
-        border: 2px solid rgba(0, 0, 0, 1);
-        -webkit-box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
-        box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
-      }
-    }
+        height: 11.2rem;
+        width: 100%;
+        max-width: 70rem;
+        padding: 1.5rem;
+        border: 0.2rem solid var(--black-2);
+        -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0.2rem var(--black-0);
+        box-shadow: 0.3rem 0.3rem 0.3rem 0.2rem var(--black-0);
 
-    input {
-      border: 2px solid rgba(0, 0, 0, 1);
-      border-radius: 10px;
-      height: 54px;
-      padding: 0 10px;
-      -webkit-box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
-      box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
+        ::placeholder {
+          font-size: 1.6rem;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
+        }
+
+        :focus {
+          outline: 0.3rem solid var(--blue-0);
+          border-color: transparent;
+        }
+      }
+
+      input:focus + label {
+        color: var(--blue-0);
+      }
+
+      textarea:focus + label {
+        color: var(--blue-0);
+      }
     }
 
     input[type="submit"] {
       cursor: pointer;
-      height: 60px;
-      font-size: 22px;
+      width: 100%;
+      height: 6rem;
+      font-size: 2.2rem;
       font-weight: bold;
-      background-color: #0055ff;
+      background-color: var(--blue-0);
       border: none;
-      -webkit-box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
-      box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
-      color: #f2f2f2;
+      border-radius: 1rem;
+      -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0.2rem var(--black-0);
+      box-shadow: 0.3rem 0.3rem 0.3rem 0.2rem var(--black-0);
+      color: var(--white);
       transition: 0.2s;
 
       :hover {
-        background-color: rgba(0, 0, 0, 1);
+        background-color: var(--black-2);
         transition: 0.2s;
-        font-size: 25px;
+        font-size: 2.5rem;
       }
     }
   }

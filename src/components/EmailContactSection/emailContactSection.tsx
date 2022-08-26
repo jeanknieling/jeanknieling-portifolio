@@ -2,6 +2,8 @@ import emailjs from "@emailjs/browser";
 import { BlockerDiv } from "../../components";
 import { useScrollContext } from "../../providers";
 import { StyledEmailContactSection } from "./style";
+import { toast } from "react-toastify";
+
 
 export const EmailContactSection = () => {
   const sendEmail = (e: any) => {
@@ -16,43 +18,42 @@ export const EmailContactSection = () => {
       )
       .then(
         (result) => {
-          alert("Mensagem enviada com sucesso");
+          toast.success("Mensagem enviada com sucesso");
         },
         (error) => {
-          alert(error.message);
+          toast.success(error.message);
         }
       );
     e.target.reset();
   };
 
-  const {contactAnimation} = useScrollContext();
-  
-  return (
+  const { contactAnimation } = useScrollContext();
 
+  return (
     <StyledEmailContactSection contactAnimation={contactAnimation}>
       <BlockerDiv id="contactSection" />
 
       <h3>CONTATO POR EMAIL</h3>
       <form onSubmit={(e) => sendEmail(e)}>
-        <label>
-          Assunto
-          <input type="text" name="subject" />
-        </label>
+        <div>
+          <input type="text" id="subject" name="subject" placeholder="Digite o assunto aqui..."/>
+          <label htmlFor="subject">Assunto</label>
+        </div>
 
-        <label>
-          Nome
-          <input type="text" name="name" />
-        </label>
+        <div>
+          <input type="text" id="name" name="name" placeholder="Digite seu nome aqui..."/>
+          <label htmlFor="name">Nome</label>
+        </div>
 
-        <label>
-          Email
-          <input type="email" name="email" />
-        </label>
+        <div>
+          <input type="text" id="email" name="email" placeholder="Digite seu email aqui..."/>
+          <label htmlFor="email">Email</label>
+        </div>
 
-        <label>
-          Mensagem
-          <textarea name="message" />
-        </label>
+        <div>
+          <textarea id="message" name="message" placeholder="Digite alguma mensagem aqui..."/>
+          <label htmlFor="message">Mensagem</label>
+        </div>
 
         <input type="submit" value="Enviar" />
       </form>

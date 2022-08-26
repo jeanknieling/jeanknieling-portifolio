@@ -7,27 +7,26 @@ interface Props {
 
 export const RightAvatarStyled = styled.img<Props>`
   border-radius: 100%;
-  border: 5px solid ${({ color }) => color && color};
+  border: 0.5rem solid ${({ color }) => color && color};
   width: ${({ size }) => size && size};
   height: ${({ size }) => size && size};
   position: absolute;
-  right: 0px;
+  right: 0;
   display: none;
-  top: 40px;
   opacity: 0;
   object-fit: cover;
   object-position: top;
-  padding: 5px;
-  transition: 1s;
+  padding: 0.5rem;
+  transition: 0.5s;
 
 
-  @media (min-width: 750px) {
+  @media (min-width: 770px) {
     @keyframes rightAvatarAnimation {
       form {
-        right: -50px;
+        right: -5rem;
       }
       to {
-        right: 25px;
+        right: 2.5rem;
         opacity: 1;
       }
     }
@@ -37,8 +36,7 @@ export const RightAvatarStyled = styled.img<Props>`
   }
 
   @media (min-width: 900px) {
-    width: 350px;
-    height: 350px;
-    transition: 1s;
+    width: 31rem;
+    height: 31rem;
   }
 `;

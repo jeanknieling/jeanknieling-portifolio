@@ -5,23 +5,23 @@ export const HeaderStyled = styled.header`
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 100px;
-  padding: 0 25px;
-  max-width: 1000px;
+  height: 10rem;
+  padding: 0 2.5rem;
+  max-width: 100rem;
   position: relative;
   z-index: 1;
-  left: -300px;
+  left: -30rem;
   opacity: 0;
   @keyframes leftAnimation {
     form {
-      left: -300px;
+      left: -30rem;
     }
     to {
-      left: 0px;
+      left: 0;
       opacity: 1;
     }
   }
-  animation: leftAnimation 1.2s ease-in-out forwards;
+  animation: leftAnimation 1.5s ease-in-out forwards;
 
   div {
     display: flex;
@@ -31,11 +31,11 @@ export const HeaderStyled = styled.header`
     section {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 1rem;
 
       h2 {
-        font-size: 14px;
-        color: #f2f2f2;
+        font-size: 1.5rem;
+        color: var(--white);
         font-weight: 600;
       }
     }
@@ -47,7 +47,6 @@ export const HeaderStyled = styled.header`
         h2 {
           display: none;
           white-space: nowrap;
-          font-size: 18px;
         }
       }
     }
@@ -61,8 +60,9 @@ export const HeaderStyled = styled.header`
     div {
       section {
         h2 {
+          font-size: 1.8rem;
           display: block;
-          margin-right: 15px;
+          margin-right: 1.5rem;
         }
       }
     }
@@ -74,7 +74,7 @@ export const ContainerStyled = styled.div`
   background: -webkit-linear-gradient(to left, #021b79, #0575e6);
   background: linear-gradient(to left, #021b79, #0575e6);
   width: 100%;
-  height: 100px;
+  height: 10rem;
   position: fixed;
   margin: 0 auto;
   display: flex;

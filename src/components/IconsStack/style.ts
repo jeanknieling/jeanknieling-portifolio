@@ -9,36 +9,36 @@ export const IconsStackStyled = styled.div<Props>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 2.5rem;
   background-color: #dfdfdf;
-  border: 5px solid #0055ff;
+  border: 0.5rem solid var(--blue-0);
   border-radius: 10px;
-  max-width: 950px;
-  min-width: 310px;
+  max-width: 95rem;
+  min-width: 31rem;
   width: 100%;
   position: relative;
-  padding: 20px 20px 15px;
-  -webkit-box-shadow: 8px 8px 5px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 8px 8px 5px 1px rgba(0, 0, 0, 0.2);
-  left: -300px;
+  padding: 2rem 2rem 1.5rem;
+  -webkit-box-shadow: 0.8rem 0.8rem 0.5rem 0.1rem var(--black-0);
+  box-shadow: 0.8rem 0.8rem 0.5rem 0.1rem var(--black-0);
+  left: -30rem;
   opacity: 0;
   @keyframes leftAnimation {
     form {
-      left: -300px;
+      left: -30rem;
     }
     to {
-      left: 0px;
+      left: 0;
       opacity: 1;
     }
   }
   animation: ${({ technologiesAnimation }) => technologiesAnimation};
 
   h3 {
-    line-height: 40px;
+    line-height: 4rem;
     text-align: center;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: bold;
-    max-width: 400px;
+    max-width: 40rem;
     color: black;
   }
 
@@ -58,28 +58,27 @@ export const IconsStackStyled = styled.div<Props>`
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          width: 90px;
-          height: 90px;
-          gap: 5px;
+          width: 10rem;
+          height: 10rem;
+          gap: 0.5rem;
 
           SVG {
-            font-size: 50px;
+            font-size: 5rem;
             transition: 0.3s;
           }
 
           h4 {
             display: flex;
             opacity: 0;
-            font-size: 15px;
+            font-size: 1.5rem;
           }
 
           :hover {
-            color: #0055ff;
+            color: var(--blue-0);
 
             SVG {
-              font-size: 75px;
-            transition: 0.3s;
-
+              font-size: 7.5rem;
+              transition: 0.3s;
             }
 
             h4 {
@@ -93,20 +92,26 @@ export const IconsStackStyled = styled.div<Props>`
         p {
           display: flex;
           justify-content: center;
-          font-size: 25px;
+          align-items: center;
+          font-size: 2.5rem;
           font-weight: bold;
-          width: 170px;
-          margin-top: 22px;
+          width: 17rem;
+          height: 5rem;
           transition: 0.3s;
 
-
           :hover {
-            font-size: 30px;
-            color: #0055ff;
+            font-size: 3rem;
+            color: var(--blue-0);
             transition: 0.2s;
           }
         }
       }
+    }
+  }
+
+  @media (min-width: 370px) {
+    p {
+      margin-top: 1.5rem;
     }
   }
 `;

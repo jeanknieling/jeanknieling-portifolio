@@ -9,18 +9,18 @@ export const MyProjectsStyled = styled.div<Props>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 2.5rem;
   width: 100%;
-  padding: 25px 5px;
+  padding: 2.5rem 0.5rem;
   position: relative;
-  left: -300px;
+  left: -30rem;
   opacity: 0;
   @keyframes leftAnimation {
     form {
-      left: -300px;
+      left: -30rem;
     }
     to {
-      left: 0px;
+      left: 0;
       opacity: 1;
     }
   }
@@ -29,8 +29,13 @@ export const MyProjectsStyled = styled.div<Props>`
 
   h3 {
     text-align: center;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: bold;
+
+    span {
+      color: var(--black-0);
+      font-size: 1.8rem;
+    }
   }
 
   section {
@@ -38,8 +43,8 @@ export const MyProjectsStyled = styled.div<Props>`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    max-width: 1200px;
+    gap: 1.5rem;
+    max-width: 120rem;
   }
 
   @media (min-width: 600px) {
@@ -51,33 +56,34 @@ export const MyProjectsStyled = styled.div<Props>`
 `;
 
 export const ContainerStyled = styled.div`
-  background: #0575e6;
+  background: var(--blue-1);
 `;
 
 export const LinkStyled = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
-  border: 3px solid transparent;
+  border-radius: 0.8rem;
+  border: 0.3rem solid transparent;
   cursor: pointer;
-  width: 300px;
-  height: 60px;
+  width: 100%;
+  max-width: 34.6rem;
+  height: 6rem;
   font-weight: bold;
-  font-size: 20px;
-  -webkit-box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
-  border: 5px solid transparent;
-  background-color: #f2f2f2;
+  font-size: 2rem;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem 0.2rem var(--black-0);
+  box-shadow: 0.3rem 0.3rem 0.3rem 0.2rem var(--black-0);
+  border: 0.5rem solid transparent;
+  background-color: var(--white);
   transition: 0.2s;
-  color: rgba(0, 0, 0, 1);
-  margin: 15px;
+  color: var(--black-2);
+  margin: 1.5rem;
 
   :hover {
-    background-color: rgba(0, 0, 0, 1);
-    color: #f2f2f2;
+    background-color: var(--black-2);
+    color: var(--white);
     transition: 0.2s;
-    font-size: 22px;
-    height: 60px;
+    font-size: 2.2rem;
+    height: 6rem;
   }
 `;

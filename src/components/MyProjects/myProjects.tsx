@@ -23,8 +23,9 @@ export const MyProjects = () => {
             imageUrl={MotorsShopGif}
             imageDescription="Gif do projeto Motors Shop"
             title="Motors Shop"
+            progress="(Em andamento...)"
             technologies="React, Typescript, React-router-dom, MUI, React-hook-form, Yup, Axios, NodeJS, Express, JWT, TypeORM, PostgreSQL, Docker"
-            description="Projeto full-stack proposto com a finalidade de simular um App de compra e venda de veículos. Aqui treinamos tudo que aprendemos durante o curso, Back-and e Front-end"
+            description="Projeto full-stack proposto com a finalidade de simular um App de compra e venda de veículos. Aqui estamos usando tudo que aprendemos durante o curso"
             projectLink="https://motors-shop.vercel.app/"
             repoIcon={{ name: "Vercel", Icon: SiVercel }}
             linkGithub="https://github.com/KA-07-Motors-Shop/project-motors-shop-front-end"
@@ -35,8 +36,9 @@ export const MyProjects = () => {
             imageUrl={KenzieHubGif}
             imageDescription="Gif do projeto Kenzie Hub"
             title="Kenzie Hub"
+            progress=""
             technologies="React, React-router-dom, Styled-components, React-hook-form, Yup, Axios"
-            description="Projeto proposto para que treinássemos conceitos como(Componentes, props, callbacks, requisições, rotas, autenticação, enviar dados para a api)."
+            description="Projeto proposto para que treinássemos conceitos como componentes, props, callbacks, requisições, rotas, autenticação e envio de dados para a api."
             projectLink="https://react-entrega-s2-kenzie-hub-jeanknieling.vercel.app/"
             repoIcon={{ name: "Vercel", Icon: SiVercel }}
             linkGithub="https://github.com/jeanknieling/react-entrega-s2-kenzie-hub-jeanknieling"
@@ -47,8 +49,9 @@ export const MyProjects = () => {
             imageUrl={KenzieHamburgueriaGif}
             imageDescription="Gif do projeto Hamburgueria da Kenzie"
             title="Hamburgueria da Kenzie"
+            progress=""
             technologies="React, Styled-components"
-            description="Projeto proposto com a finalidade de simular um E-commerce de comida. Treinamos conceitos como(Componentes, props, callbacks e principalmente responsividade com mobile-first)."
+            description="Projeto proposto com a finalidade de simular um E-commerce | fast food. Treinamos conceitos como componentes, props, callbacks e responsividade com mobile-first)."
             projectLink="https://react-entrega-s1-hamburgueria-da-kenzie-jeanknieling.vercel.app/"
             repoIcon={{ name: "Vercel", Icon: SiVercel }}
             linkGithub="https://github.com/jeanknieling/react-entrega-s1-hamburgueria-da-kenzie-jeanknieling"
@@ -59,8 +62,9 @@ export const MyProjects = () => {
             imageUrl={NuKenzieGif}
             imageDescription="Gif do projeto Nu Kenzie"
             title="Nu Kenzie"
+            progress=""
             technologies="React, Styled-components"
-            description="Projeto proposto com a finalidade de simular um App de controle de finanças. Treinamos conceitos como(Componentes, props, callbacks, responsividade com mobile-first)."
+            description="Projeto proposto com a finalidade de simular um App de controle de finanças. Treinamos conceitos como componentes, props, callbacks e responsividade com mobile-first)."
             projectLink="https://react-entrega-s1-nu-kenzie-jeanknieling.vercel.app/"
             repoIcon={{ name: "Vercel", Icon: SiVercel }}
             linkGithub="https://github.com/jeanknieling/react-entrega-s1-nu-kenzie-jeanknieling"
@@ -71,6 +75,7 @@ export const MyProjects = () => {
             imageUrl={MedalBoardGif}
             imageDescription="Gif do projeto Medal Board"
             title="Medal Board"
+            progress=""
             technologies="HTML, CSS e Javascript"
             description="Projeto proposto com a finalidade de simular um quadro de medalhas das Olímpadas, onde praticamos estilização de tabelas e programação POO com JS."
             projectLink="https://jeanknieling.github.io/extra-quadro-medalhas-m2-sprint-3a-jeanknieling/"
@@ -83,7 +88,8 @@ export const MyProjects = () => {
             imageUrl={KenzieShopGif}
             imageDescription="Gif do projeto Kenzie Shop"
             title="Kenzie Shop"
-            technologies="HTML, CSS e Javascript"
+            progress=""
+            technologies="React, Styled-components, ContextAPI, React-router-dom"
             description="Projeto proposto com a finalidade de simular um E-commerce de produtos digitais, onde ptaticamos as rotas de páginas, responsividade e o uso do Context API"
             projectLink="https://react-entrega-s3-kenzieshop-jeanknieling.vercel.app/"
             repoIcon={{ name: "Vercel", Icon: SiVercel }}

@@ -23,20 +23,18 @@ export const MyDescription: React.FC = () => {
           url={MyPhoto}
           alt="Foto de perfil"
           size="280px"
-          color="#0055FF"
+          color="var(--blue-0)"
         />
         <div>
           <p>
-            <span>Olá 🤓👍</span>
-            <span>,</span>
+            <span>Olá 🤓👍 </span>, Me chamo
           </p>
-          <p>Me chamo</p>
+
           <h1>
-            <span>JEAN KNIELING DOS SANTOS</span>
-            <span>,</span>
+            <strong>JEAN KNIELING DOS SANTOS</strong>
           </h1>
           <p>
-            sou casado <span>👩‍❤️‍👨</span> e tenho 3 filhos <span>👨‍👩‍👧‍👦</span>.
+          <span>sou casado <span>👩‍❤️‍👨</span></span> <span>e tenho 3 filhos <span>👨‍👩‍👧‍👦</span></span>
           </p>
         </div>
 
@@ -44,22 +42,24 @@ export const MyDescription: React.FC = () => {
           <p>Sou desenvolvedor</p>
           <h2>
             <span>WEB</span> <span>FULL STACK</span>
-            <span>,</span>
           </h2>
         </div>
         <PStyled>
           Acredito no poder de transformação e evolução através da tecnologia,
           mas não apenas isso, também quero ser um exemplo de superação, esforço
-          e dedicação aos meus filhos e esposa, isso me motiva a continuar minha
+          e dedicação para minha família. Isso me motiva a continuar nesta
           jornada de estudos na área de programação, que de fato iniciou na
-          Kenzie Academy Brasil a um ano e se depender de mim não terá data para
-          terminar.
+          Kenzie Academy Brasil há quase um ano e se depender de mim não terá
+          data para terminar, pois nessa área ralmente me encontrei
+          profissionalmente, gosto de desafios, de aprender constantemente e
+          estar em contato com novas tecnologias que podem melhorar o desempenho
+          das empresas e a vida das pessoas.
         </PStyled>
         <div>
           <CVButton
             id="teste"
             link="https://drive.google.com/file/d/13qdW7G_tj-336MHiCKqM1DhSsBZem1ha/view?usp=sharing"
-            color="#F2F2F2"
+            color="var(--white)"
             padding="20px"
             text="Meu Currículo"
           />

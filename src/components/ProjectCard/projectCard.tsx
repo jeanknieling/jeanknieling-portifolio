@@ -5,6 +5,7 @@ interface IProjectsCardProps {
   imageUrl: string;
   imageDescription: string;
   title: string;
+  progress: string | undefined;
   technologies: string;
   description: string;
   projectLink: string;
@@ -16,6 +17,7 @@ export const ProjectCard: React.FC<IProjectsCardProps> = ({
   imageUrl,
   imageDescription,
   title,
+  progress,
   technologies,
   description,
   projectLink: linkVercel,
@@ -28,7 +30,7 @@ export const ProjectCard: React.FC<IProjectsCardProps> = ({
       <img src={imageUrl} alt={imageDescription} width="150" />
       <section>
         <div>
-          <h3>{title}</h3>
+          <h3>{title} {progress && <span>{progress}</span>}</h3>
           <p>{description}</p>
           <p>
             <span>Tecnologias: </span>

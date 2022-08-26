@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const ButtonLeadsToTopStyled = styled.button`
-  background-color: rgba(0,0,0,0.5);
-  width: 50px;
-  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 5rem;
+  height: 5rem;
   position: fixed;
-  bottom: 62px;
-  right: 15px;
+  bottom: 6.2rem;
+  right: 1.5rem;
   transition: 5s;
   border-radius: 50%;
   cursor: pointer;
@@ -14,8 +14,8 @@ export const ButtonLeadsToTopStyled = styled.button`
   transition: 0s;
 
   SVG {
-    font-size: 25px;
-    color: #f2f2f2;
+    font-size: 2.5rem;
+    color: var(--white);
   }
 
   @media (min-width: 1200px) {

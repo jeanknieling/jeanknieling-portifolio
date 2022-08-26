@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
-html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe, input, textarea,
 h1, h2, h3, h4, h5, h6, hr, p, blockquote, button, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -32,11 +32,22 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+html {
+  /* 1rem = 16px (User Agent) = 100% (User Agent) */
+  font-size: 62.5%; /* 10px */
+
+  @media (max-width:600px) {
+
+    font-size: 55%;
+  }
+}
+
 body {
   position: relative;
   width: 100%;
   height: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.6rem;
   color: white;
 }
 
@@ -60,32 +71,17 @@ table {
 }
 
 :root {
-  --color-primary: #272B55;
-  --color-primary-50: #4A5292;
-  --color-secondary: #545CB7;
+  --blue-3: #021b79;
+  --blue-2: #0444aa;
+  --blue-1: #0575e6;
+  --blue-0: #0055ff;
   
-  --black: #13191B;
-  --white: #F5F5F5; 
+  --black-2: rgba(0,0,0,1);
+  --black-1: rgba(0,0,0,0.5);
+  --black-0: rgba(0,0,0,0.3);
 
-  --background-menus: #D9E0F5;
-
-  --purple-4: #4C526B;
-  --purple-3: #5C5B74;
-  --purple-2: #626879;
-  --purple-1: #839EAC;
-
-  --grey-4: #121214;
-  --grey-3: #212529;
-  --grey-2: #343B41;
-  --grey-1: #868E96;
-  --grey-0: #F8F9FA;
-
-  --fontsize-h1: 2rem;
-  --fontsize-h2: calc(var(--fontsize-h1) - 25%);
-  --fontsize-h3: calc(var(--fontsize-h2) - 50%);
-  --headline: 0.75rem;
-
-  --fontfamily-poppins: "Poppins", sans-serif;
- 
+  --gray: #333;
+  
+  --white: #f2f2f2; 
 }
 `;

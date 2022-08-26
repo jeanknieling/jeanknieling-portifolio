@@ -15,7 +15,7 @@ export const Header = () => {
               url={MyPhoto}
               alt="Foto de perfil"
               size="70px"
-              color="#F2F2F2"
+              color="var(--white)"
             />
             <h2>{"< JEAN KNIELING />"} </h2>
           </section>
