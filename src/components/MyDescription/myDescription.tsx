@@ -50,7 +50,7 @@ export const MyDescription: React.FC = () => {
           e dedicação para minha família. Isso me motiva a continuar nesta
           jornada de estudos na área de programação, que de fato iniciou na
           Kenzie Academy Brasil há quase um ano e se depender de mim não terá
-          data para terminar, pois nessa área ralmente me encontrei
+          data para terminar, pois nessa área realmente me encontrei
           profissionalmente, gosto de desafios, de aprender constantemente e
           estar em contato com novas tecnologias que podem melhorar o desempenho
           das empresas e a vida das pessoas.
