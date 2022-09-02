@@ -58,7 +58,7 @@ export const MyDescription: React.FC = () => {
         <div>
           <CVButton
             id="teste"
-            link="https://drive.google.com/file/d/13qdW7G_tj-336MHiCKqM1DhSsBZem1ha/view?usp=sharing"
+            link="https://drive.google.com/file/d/1_t-m7Uu-7er3XNrzTi23BebjyF7yATli/view?usp=sharing"
             color="var(--white)"
             padding="20px"
             text="Meu Currículo"
